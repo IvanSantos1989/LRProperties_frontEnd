@@ -8,33 +8,35 @@ const Navbar = () => {
   };
 
   return (
-    <div className='w-screen flex items-center justify-between font-normal py-3 px-5 border-b border-black text-sm'>
-      <h2 className='cursor-pointer'><strong>LR</strong> Properties</h2>
+    <div className='container-fluid'>
+      <div className='d-flex justify-content-between align-items-center py-3 border-bottom'>
+        <h2 className='cursor-pointer'><strong>LR</strong> Properties</h2>
 
-      <div className='flex items-center gap-4 text-black py-1 px-4 rounded'>
-        <p
-          onClick={() => handleItemClick('Home')}
-          className={`p-1 cursor-pointer ${activeItem === 'Home' ? 'border-b border-black' : 'hover:border-b hover:border-black'}`}
-        >
-          Home
-        </p>
-        <p
-          onClick={() => handleItemClick('Alojamentos')}
-          className={`p-1 cursor-pointer ${activeItem === 'Alojamentos' ? 'border-b border-black' : 'hover:border-b hover:border-black'}`}
-        >
-          Alojamentos
-        </p>
-        <p
-          onClick={() => handleItemClick('Contatos')}
-          className={`p-1 cursor-pointer ${activeItem === 'Contatos' ? 'border-b border-black' : 'hover:border-b hover:border-black'}`}
-        >
-          Contatos
-        </p>
-      </div>
+        <div className='d-flex align-items-center gap-4'>
+          <p
+            onClick={() => handleItemClick('Home')}
+            className={`p-1 cursor-pointer ${activeItem === 'Home' ? 'border-bottom border-dark' : 'hover:border-bottom hover:border-dark'}`}
+          >
+            Home
+          </p>
+          <p
+            onClick={() => handleItemClick('Alojamentos')}
+            className={`p-1 cursor-pointer ${activeItem === 'Alojamentos' ? 'border-bottom border-dark' : 'hover:border-bottom hover:border-dark'}`}
+          >
+            Alojamentos
+          </p>
+          <p
+            onClick={() => handleItemClick('Contatos')}
+            className={`p-1 cursor-pointer ${activeItem === 'Contatos' ? 'border-bottom border-dark' : 'hover:border-bottom hover:border-dark'}`}
+          >
+            Contatos
+          </p>
+        </div>
 
-      <div className='flex items-center gap-2'>
-        <button className='py-2 px-3 bg-black text-white rounded-full'>Login</button>
-        <button className='py-2 px-3 bg-transparent text-black rounded-full border'>SignUp</button>
+        <div className='d-flex align-items-center gap-2'>
+          <button className='btn btn-outline-dark'>Login</button>
+          <button className='btn btn-outline-dark'>SignUp</button>
+        </div>
       </div>
     </div>
   );

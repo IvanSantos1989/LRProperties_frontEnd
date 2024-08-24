@@ -10,63 +10,92 @@
 }
 
 
-/* .custom-search-btn {
-  background-color: #FF8A8A;
-  border: none;
-  color: black;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-.custom-search-btn:hover {
-  background-color: #FF5959;
-}
-
-.container-items{
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-left: 5px;
-}
-
-.container-right{
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-
-    
-}
-
-.container-form{
-  display: flex;
- align-items: center;
- justify-content: center;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
   padding: 0;
-  gap: 1rem;
+}
 
-  p{
-    font-size: 15px;
-    font-weight: bold;
-    color: #fff;
-    margin: 0;
-    background-color: #FF8A8A;
-    padding: 5px 12px;
-    border-radius: 13px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-  }
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-  p:hover{
-    background-color: #FF5959;
-  }
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
-  .active{
-    background-color: #FF8A8A;
-    color: #fff;
-  }
-} */
+.properties-listing {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.filter-bar button {
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filter-bar .add-filter {
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+.properties {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.property-card {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.property-card:hover {
+  transform: translateY(-10px);
+}
+
+.property-image {
+  height: 200px;
+  background-color: #ccc;
+}
+
+.property-details {
+  padding: 15px;
+}
+
+.property-details h2 {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.property-details p {
+  margin: 0 0 5px;
+  color: #777;
+}
+
+.price {
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+}
