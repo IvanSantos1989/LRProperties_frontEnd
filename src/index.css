@@ -99,3 +99,42 @@ body {
   color: black;
   font-size: 18px;
 }
+
+.property-card button {
+  background-color: #FFBE98;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.property-card button:hover {
+  background-color: #FF9874;
+}
+
+.property-card .saiba-mais-button {
+  background-color: #FFBE98;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-left: 130px;
+}
+
+.property-card .saiba-mais-button:hover {
+  background-color: #FF9874;
+  color: black;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: black;
+  color: #fff;
+}

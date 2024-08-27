@@ -11,41 +11,69 @@ const App = () => {
       </header>
       <div className="properties-listing">
         <div className="filter-bar">
-          <span>All rentals</span>
-          <button className="add-filter">Add filter option</button>
-          <span>6 properties match</span>
-          <button className="export">Export</button>
+          <span>Todos</span>
+          <button className="add-filter">Filtrar</button>
+          <span>8 propriedades encontradas</span>
         </div>
         <div className="properties">
           <PropertyCard
-            title="3 Industrial Road"
-            location="Boston, MA"
-            description="Very big flat almost 100 m, with kitchen 14 m and big bathroom. New task..."
-            price="$1,250,000"
+            title="Alojamento Local"
+            location="Porto, Portugal"
+            description="Um apartamento muito grande quase 100 m, com cozinha 14 m e casa de banho grande."
+            price="€50,00 por noite"
           />
           <PropertyCard
-            title="Tenuta di Petriolo"
-            location="NYC - Manhattan"
-            description="Once-in-a-lifetime opportunity to create a 52-ft wide megamansion in the..."
-            price="$410,000"
+            title="Alojamento Local"
+            location="Porto, Portugal"
+            description="Um apartamento muito grande quase 100 m, com cozinha 14 m e casa de banho grande."
+            price="€50,00 por noite"
+          />
+        <PropertyCard
+            title="Alojamento Local"
+            location="Porto, Portugal"
+            description="Um apartamento muito grande quase 100 m, com cozinha 14 m e casa de banho grande."
+            price="€50,00 por noite"
           />
           <PropertyCard
-            title="5 BD Condo in Tribeca"
-            location="New York"
-            description="Very big flat almost 100 m, with kitchen 14 m and big bathroom. New task..."
-            price="$2,100,000"
+            title="Alojamento Local"
+            location="Porto, Portugal"
+            description="Um apartamento muito grande quase 100 m, com cozinha 14 m e casa de banho grande."
+            price="€50,00 por noite"
           />
           <PropertyCard
-            title="Reflecting the rich"
-            location="USA, Edenshore"
-            description="Very big flat almost 100 m, with kitchen 14 m and big bathroom. New task..."
-            price="$4,050,000"
+            title="Alojamento Local"
+            location="Porto, Portugal"
+            description="Um apartamento muito grande quase 100 m, com cozinha 14 m e casa de banho grande."
+            price="€50,00 por noite"
           />
-        </div>
+          <PropertyCard
+            title="Alojamento Local"
+            location="Porto, Portugal"
+            description="Um apartamento muito grande quase 100 m, com cozinha 14 m e casa de banho grande."
+            price="€50,00 por noite"
+          />
+          <PropertyCard
+            title="Alojamento Local"
+            location="Porto, Portugal"
+            description="Um apartamento muito grande quase 100 m, com cozinha 14 m e casa de banho grande."
+            price="€50,00 por noite"
+          />
+          <PropertyCard
+            title="Alojamento Local"
+            location="Porto, Portugal"
+            description="Um apartamento muito grande quase 100 m, com cozinha 14 m e casa de banho grande."
+            price="€50,00 por noite"
+          />
       </div>
     </div>
+    <footer>
+      <p>© 2024 LR Properties | Todos os Direitos Reservados</p>
+    </footer>
+  </div>
   );
 }
+
+
 
 function PropertyCard({ title, location, description, price }) {
   return (
@@ -56,6 +84,8 @@ function PropertyCard({ title, location, description, price }) {
         <p>{location}</p>
         <p>{description}</p>
         <p className="price">{price}</p>
+        <button className="btn">Reservar</button>
+        <button className="saiba-mais-button">Saiba Mais</button>
       </div>
     </div>
   );
