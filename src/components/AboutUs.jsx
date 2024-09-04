@@ -1,9 +1,11 @@
 import React from 'react'
 import { MdHomeRepairService } from 'react-icons/md'
+
 const AboutUs = () => {
   return (
-    <div className='w-11/12 m-auto flex flex-col md:flex-row justify-between items-center md:space-x-10 space-y-10 md:space-y-0 py-10'>
+    <div className='w-11/12 m-auto flex flex-col md:flex-row justify-between items-center md:space-x-10 space-y-10 md:space-y-0'>
       <div className='flex space-x-4 md:space-x-10'>
+
         <div className="mt-10 space-y-4">
           <div className='w-48 flex flex-col items-center bg-white text-center p-5 drop-shadow-2x1 rounded-md'>
             <MdHomeRepairService size={"1.8rem"}/>
@@ -13,6 +15,7 @@ const AboutUs = () => {
               adipisicing elit. Quisquam, voluptates.
             </p>
           </div>
+
           <div className='w-48 flex flex-col items-center bg-white text-center p-5 drop-shadow-2x1 rounded-md'>
             <MdHomeRepairService size={"1.8rem"}/>
             <h1 className='text-xl font-bold'>Bons Serviços</h1>
@@ -22,6 +25,7 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
+
         <div className='space-y-4'>
           <div className='w-48 flex flex-col items-center bg-white text-center p-5 drop-shadow-2x1 rounded-md'>
             <MdHomeRepairService size={"1.8rem"}/>
@@ -31,6 +35,7 @@ const AboutUs = () => {
                Quisquam, voluptates.
             </p>
           </div>
+          
           <div className='w-48 flex flex-col items-center bg-white text-center p-5 drop-shadow-2x1 rounded-md'>
             <MdHomeRepairService size={"1.8rem"}/>
             <h1 className='text-xl font-bold'>Bons Serviços</h1>

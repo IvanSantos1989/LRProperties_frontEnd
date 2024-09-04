@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div className='container-fluid'>
-      <div className='d-flex justify-content-between align-items-center py-3 border-bottom'>
+      <div className='d-flex justify-content-between p-3 border-bottom flex justify-between items-center'>
         <h2 className='cursor-pointer'><strong>LR</strong> Properties</h2>
 
         <div className='d-flex align-items-center gap-4'>
@@ -26,10 +26,10 @@ const Navbar = () => {
             Alojamentos
           </p>
           <p
-            onClick={() => handleItemClick('Contatos')}
-            className={`p-1 cursor-pointer ${activeItem === 'Contatos' ? 'border-bottom border-dark' : 'hover:border-bottom hover:border-dark'}`}
+            onClick={() => handleItemClick('Contactos')}
+            className={`p-1 cursor-pointer ${activeItem === 'Contactos' ? 'border-bottom border-dark' : 'hover:border-bottom hover:border-dark'}`}
           >
-            Contatos
+            Contactos
           </p>
         </div>
 

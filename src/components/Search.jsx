@@ -1,18 +1,11 @@
 import React from 'react'
 import searchImg from '../assets/image6.jpg'
+import Navbar from './Navbar'
+
 const Search = () => {
   return (
     <div>
-      <nav className='flex justify-between items-center py-5'>
-        <h1 className='text-xl md:text-2x1 font-bold'>LR Properties</h1>
-        <ul className='flex items-center space-x-5 text-xs md:text-base'>
-          <li>Facilidades</li>
-          <li>Alojamentos</li>
-          <li>Sobre</li>
-        </ul>
-        <button className='bg-yellow-400 px-5 py-2 rounded-xl text-xs md:text-base'>Contactos</button>
-      </nav>
-
+      <Navbar />
       <div className='h-[500px] relative'>
         <img src={searchImg} alt="" 
         className='w-full h-full object-cover rounded-md'/>
@@ -24,8 +17,14 @@ const Search = () => {
               <input type="text" placeholder='PT' className='outline-0 text-xs'/>
             </div>
             <div className='flex flex-col space-y-2'>
-              <label htmlFor="property">Tipologia</label>
-              <input type="text" placeholder='T0' className='outline-0 text-xs'/>
+              <label >Tipologia</label>
+              {/* <input type="text" placeholder='T0' className='outline-0 text-xs'/> */}
+              <select   name="property" id="" placeholder="T0">
+                <option value="T0">T0</option>
+                <option value="T1">T1</option>
+                <option value="T2">T2</option>
+                <option value="T3">T3</option>
+              </select>
             </div>
             <div className='flex flex-col space-y-2'>
               <label htmlFor="price">Preço máximo</label>
