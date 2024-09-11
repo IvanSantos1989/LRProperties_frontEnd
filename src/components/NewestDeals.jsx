@@ -2,7 +2,6 @@ import React from 'react'
 import { BsSuitHeart } from 'react-icons/bs'
 import { IoBedOutline, IoLocationOutline } from 'react-icons/io5'
 import { GiBathtub, GiHomeGarage } from 'react-icons/gi'
-import { AiOutlineDoubleRight } from 'react-icons/ai'
 
 import house1 from '../assets/house1.jpg'
 import house2 from '../assets/house2.jpg'
@@ -381,9 +380,6 @@ const NewestDeals = () => {
           </div>
         </div>
 
-      </div>
-      <div className='w-full flex justify-center'>
-        <button className='bg-yellow-200 px-5 py-2 rounded-md text-xl flex items-center space-x-2'><span>Veja mais</span><AiOutlineDoubleRight/></button>
       </div>
     </div>
   )

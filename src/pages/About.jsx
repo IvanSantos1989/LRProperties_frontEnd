@@ -1,7 +1,11 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function About() {
   return (
+    <div>
+      <Navbar />
     <div className="container mx-auto p-4">
       <h1 className="text-4xl font-bold mb-4">Sobre a Empresa</h1>
       <p className="text-lg mb-4">
@@ -22,6 +26,8 @@ function About() {
         title="Localização da Empresa"
         className="w-full h-64 md:h-96 mb-4"
       ></iframe>
+    </div>
+    <Footer />
     </div>
   );
 }

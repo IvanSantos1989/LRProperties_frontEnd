@@ -2,6 +2,8 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { IoBedOutline, IoLocationOutline } from 'react-icons/io5';
 import { GiBathtub, GiHomeGarage } from 'react-icons/gi';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const houses = [
   { id: 1, img: '/assets/house1.jpg', title: 'Casa 1', location: 'Porto, Portugal', price: '$100,00', beds: 5, baths: 3, garage: 1, description: 'Descrição detalhada da Casa 1.' },
@@ -17,6 +19,8 @@ const HouseDetails = () => {
   }
 
   return (
+    <div>
+      <Navbar />
     <div className="container mx-auto p-4">
       <h1 className="text-4xl font-bold mb-4">{house.title}</h1>
       <img src={house.img} alt={house.title} className="w-full h-64 object-cover rounded-lg mb-4" />
@@ -41,6 +45,8 @@ const HouseDetails = () => {
       </div>
       <h2 className="text-2xl font-semibold mb-4">{house.price}</h2>
       <button className="bg-blue-500 text-white px-4 py-2 rounded">Reservar</button>
+    </div>
+    <Footer />
     </div>
   );
 };
