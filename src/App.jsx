@@ -7,22 +7,25 @@ import AboutUs from './components/AboutUs';
 import HouseDetails from './pages/HouseDetails';
 import About from './pages/About';
 import '/src/index.css';
+import Navbar from './components/Navbar';
 
 const App = () => {
   return (
-   <Router>
-    <div className='App'>
-      <div className='w-11/12 md:w-4/5 m-auto'>
-      <Search />
-      <Routes>
-        <Route path='/' element={<NewestDeals />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/house/:id' element={<HouseDetails />} />
-      </Routes>
-      <AboutUs />
+    <Router>
+      <div className='App'>
+        <Navbar />
+        <div className='w-11/12 md:w-4/5 m-auto'>
+          <Search />
+          <Routes>
+            <Route path='/' element={<NewestDeals />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/house/:id' element={<HouseDetails />} />
+          </Routes>
+          <NewestDeals />
+          <AboutUs />
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
     </Router>
   );
 }

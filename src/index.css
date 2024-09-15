@@ -30,19 +30,3 @@ body {
   background-color: #FF9874;
   color: black;
 }
-
-.saiba-mais-button {
-  background-color: #FFBE98;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 6px 10px;
-  cursor: pointer;
-  font-size: .7rem;
-  
-}
-
-.saiba-mais-button:hover {
-  background-color: #FF9874;
-  color: black;
-}

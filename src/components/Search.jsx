@@ -1,11 +1,9 @@
 import React from 'react'
 import searchImg from '../assets/image6.jpg'
-import Navbar from './Navbar'
 
 const Search = () => {
   return (
     <div>
-      <Navbar />
       <div className='h-[500px] relative'>
         <img src={searchImg} alt="" 
         className='w-full h-full object-cover rounded-md'/>

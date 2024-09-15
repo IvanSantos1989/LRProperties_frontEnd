@@ -53,8 +53,8 @@ const NewestDeals = () => {
               </div>
               
               <div className='flex justify-between m-0'>
-              <button className="btn">Reservar</button>
-              <button className="saiba-mais-button">Saiba Mais</button>
+              <button className="btn btn-outline-dark">Reservar</button>
+              <button className="btn btn-outline-dark">Saiba Mais</button>
               </div>
             </div>
           </div>
@@ -93,8 +93,8 @@ const NewestDeals = () => {
               </div>
               
               <div className='flex justify-between m-0'>
-              <button className="btn">Reservar</button>
-              <button className="saiba-mais-button">Saiba Mais</button>
+              <button className="btn btn-outline-dark">Reservar</button>
+              <button className="btn btn-outline-dark">Saiba Mais</button>
               </div>
             </div>
           </div>
@@ -133,8 +133,8 @@ const NewestDeals = () => {
               </div>
               
               <div className='flex justify-between m-0'>
-              <button className="btn">Reservar</button>
-              <button className="saiba-mais-button">Saiba Mais</button>
+              <button className="btn btn-outline-dark">Reservar</button>
+              <button className="btn btn-outline-dark">Saiba Mais</button>
               </div>
             </div>
           </div>
@@ -173,8 +173,8 @@ const NewestDeals = () => {
               </div>
               
               <div className='flex justify-between m-0'>
-              <button className="btn">Reservar</button>
-              <button className="saiba-mais-button">Saiba Mais</button>
+              <button className="btn btn-outline-dark">Reservar</button>
+              <button className="btn btn-outline-dark">Saiba Mais</button>
               </div>
             </div>
           </div>
@@ -213,8 +213,8 @@ const NewestDeals = () => {
               </div>
               
               <div className='flex justify-between m-0'>
-              <button className="btn">Reservar</button>
-              <button className="saiba-mais-button">Saiba Mais</button>
+              <button className="btn btn-outline-dark">Reservar</button>
+              <button className="btn btn-outline-dark">Saiba Mais</button>
               </div>
             </div>
           </div>
@@ -253,8 +253,8 @@ const NewestDeals = () => {
               </div>
               
               <div className='flex justify-between m-0'>
-              <button className="btn">Reservar</button>
-              <button className="saiba-mais-button">Saiba Mais</button>
+              <button className="btn btn-outline-dark">Reservar</button>
+              <button className="btn btn-outline-dark">Saiba Mais</button>
               </div>
             </div>
           </div>
@@ -293,8 +293,8 @@ const NewestDeals = () => {
               </div>
               
               <div className='flex justify-between m-0'>
-              <button className="btn">Reservar</button>
-              <button className="saiba-mais-button">Saiba Mais</button>
+              <button className="btn btn-outline-dark">Reservar</button>
+              <button className="btn btn-outline-dark">Saiba Mais</button>
               </div>
             </div>
           </div>
@@ -333,8 +333,8 @@ const NewestDeals = () => {
               </div>
               
               <div className='flex justify-between m-0'>
-              <button className="btn">Reservar</button>
-              <button className="saiba-mais-button">Saiba Mais</button>
+              <button className="btn btn-outline-dark">Reservar</button>
+              <button className="btn btn-outline-dark">Saiba Mais</button>
               </div>
             </div>
           </div>
@@ -373,8 +373,8 @@ const NewestDeals = () => {
               </div>
               
               <div className='flex justify-between m-0'>
-              <button className="btn">Reservar</button>
-              <button className="saiba-mais-button">Saiba Mais</button>
+              <button className="btn btn-outline-dark">Reservar</button>
+              <button className="btn btn-outline-dark">Saiba Mais</button>
               </div>
             </div>
           </div>
