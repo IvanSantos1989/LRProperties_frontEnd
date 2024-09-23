@@ -2,11 +2,6 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/LRProperties_frontEnd/',
+  base: '/vite-react/',
   plugins: [react()],
-  resolve: {
-    alias: {
-      '@': '/src',
-    },
-  },
 });

@@ -2,6 +2,8 @@ import React from 'react'
 import { BsSuitHeart } from 'react-icons/bs'
 import { IoBedOutline, IoLocationOutline } from 'react-icons/io5'
 import { GiBathtub, GiHomeGarage } from 'react-icons/gi'
+import { Link } from 'react-router-dom'
+import '/src/index.css';
 
 import house1 from '../assets/house1.jpg'
 import house2 from '../assets/house2.jpg'
@@ -12,7 +14,6 @@ import house6 from '../assets/house6.jpg'
 import house7 from '../assets/house12.jpg'
 import house8 from '../assets/house13.jpg'
 import house9 from '../assets/house14.jpg'
-import '/src/index.css';
 
 const NewestDeals = () => {
   return (
@@ -54,7 +55,7 @@ const NewestDeals = () => {
               
               <div className='flex justify-between m-0'>
               <button className="btn btn-outline-dark">Reservar</button>
-              <button className="btn btn-outline-dark">Saiba Mais</button>
+              <Link to={"house"} className="btn btn-outline-dark">Saiba Mais</Link>
               </div>
             </div>
           </div>
