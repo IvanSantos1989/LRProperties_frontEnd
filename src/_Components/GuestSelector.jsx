@@ -1,4 +1,3 @@
-// src/components/GuestSelector.jsx
 import React, { useState } from 'react';
 
 const GuestSelector = () => {

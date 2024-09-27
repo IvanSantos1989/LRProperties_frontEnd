@@ -19,7 +19,7 @@ const HostelCard = ({ hostel, id }) => {
                     </div>
                     <div className="flex items-center gap-3  ">
                         <p className="text-gray-600 text-md">{hostel.price}</p>
-                        <p className='text-gray-600'>noite</p>
+                        <p className='text-gray-600'>por noite</p>
                     </div>
                 </div>
             </div>

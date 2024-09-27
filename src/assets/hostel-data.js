@@ -6,12 +6,12 @@ import img5 from "../assets/clerigos05.jpg"
 import img6 from "../assets/studio06.webp"
 
 export const hostelData = [
-    // Dados dos hóspedes aqui
+    // informações dos alojamentos
     {
       id: 1,
       name: 'Cedofeita, Portugal',
       location: 'Praia do Cabedelo',
-      price: '€ 390',
+      price: '€ 100',
       quartos: "2",
       camas: "2",
       hóspedes: "2",
@@ -28,7 +28,7 @@ export const hostelData = [
         id: 2,
         name: 'Cedofeita, Portugal',
         location: 'Praia do Cabedelo',
-        price: '€ 390',
+        price: '€ 100',
         quartos: "2",
         camas: "2",
         hóspedes: "2",
@@ -45,7 +45,7 @@ export const hostelData = [
         id: 3,
         name: 'Almartires, Portugal',
         location: 'Praia do Cabedelo',
-        price: '€ 390',
+        price: '€ 100',
         quartos: "2",
         camas: "2",
        hóspedes: "2",
@@ -62,7 +62,7 @@ export const hostelData = [
         id: 4,
         name: 'Caldeireiros, Portugal',
         location: 'Praia do Cabedelo',
-        price: '€ 390',
+        price: '€ 100',
         quartos: "2",
         camas: "2",
         hóspedes: "2",
@@ -79,7 +79,7 @@ export const hostelData = [
         id: 5,
         name: 'Clerigos, Portugal',
         location: 'Praia do Cabedelo',
-        price: '€ 390',
+        price: '€ 100',
         quartos: "2",
         camas: "2",
         hóspedes: "2",
@@ -96,7 +96,7 @@ export const hostelData = [
         id: 6,
         name: 'Aliados, Portugal',
         location: 'Praia do Cabedelo',
-        price: '€ 390',
+        price: '€ 100',
         quartos: "2",
         camas: "2",
         hóspedes: "2",
@@ -113,7 +113,7 @@ export const hostelData = [
         id: 7,
         name: 'Aliados, Portugal',
         location: 'Praia do Cabedelo',
-        price: '€ 390',
+        price: '€ 100',
         quartos: "2",
         camas: "2",
         hóspedes: "2",
@@ -147,7 +147,7 @@ export const hostelData = [
         id: 9,
         name: 'Aliados, Portugal',
         location: 'Praia do Cabedelo',
-        price: '€ 390',
+        price: '€ 100',
         quartos: "2",
         camas: "2",
         hóspedes: "2",
@@ -161,4 +161,3 @@ export const hostelData = [
         registro: "35644/AL"
       },
 ]
-

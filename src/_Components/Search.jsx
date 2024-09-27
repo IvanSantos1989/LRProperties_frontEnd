@@ -1,5 +1,5 @@
 import React from 'react'
-import searchImg from "../assets/image6.jpg"
+import searchImg from "../assets/Porto.jpg"
 import SearchBar from './SearchBar'
 
 const Search = () => {

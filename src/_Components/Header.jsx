@@ -1,8 +1,6 @@
-
 import React from 'react'
 import { Button } from '@/Components/ui/button';
 import { Link } from 'react-router-dom';
-
 
 
 const Header = () => {
@@ -15,13 +13,10 @@ const Header = () => {
             <Link to="/"><p alt="logo" className='cursor-pointer text-xl font-bold'>LOGO</p></Link>
 
 
-
             <div className='flex items-center gap-2'>
                 <Button className="rounded-xl text-white" >SignUp</Button>
                 <Button className="rounded-xl text-white">Login</Button>
             </div>
-
-
 
         </div>
     )

@@ -25,7 +25,8 @@ export default {
   			},
   			primary: {
   				DEFAULT: '#FF9874',
-  				foreground: 'hsl(var(--primary-foreground))'
+				foreground: 'hsl(var(--primary-foreground))',
+				hover: '#E57A5A'
   			},
   			secondary: {
   				DEFAULT: 'hsl(var(--secondary))',
@@ -58,4 +59,3 @@ export default {
   },
   plugins: [require("tailwindcss-animate")],
 }
-

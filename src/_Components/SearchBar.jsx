@@ -1,4 +1,3 @@
-// src/components/SearchBar.jsx
 import React, { useState, useRef, useEffect } from 'react';
 import { FiSearch } from "react-icons/fi";
 import DatePicker from 'react-datepicker';
@@ -31,14 +30,14 @@ const SearchBar = () => {
                     <label className="text-xs text-gray-500">Onde</label>
                     <input
                         type="text"
-                        placeholder="Pesquisar destinos"
+                        placeholder="Pesquisar localização"
                         className="outline-none"
                     />
                 </div>
             </div>
             <div className="flex items-center gap-3 border-r pr-3">
                 <div className="flex flex-col">
-                    <label className="text-xs text-gray-500">Check in</label>
+                    <label className="text-xs text-gray-500">Check-in</label>
                     <DatePicker
                         selected={checkInDate}
                         onChange={(date) => setCheckInDate(date)}
@@ -49,7 +48,7 @@ const SearchBar = () => {
             </div>
             <div className="flex items-center gap-3 border-r pr-3">
                 <div className="flex flex-col">
-                    <label className="text-xs text-gray-500">Checkout</label>
+                    <label className="text-xs text-gray-500">Check-out</label>
                     <DatePicker
                         selected={checkOutDate}
                         onChange={(date) => setCheckOutDate(date)}
@@ -74,7 +73,7 @@ const SearchBar = () => {
                     )}
                 </div>
             </div>
-            <button className="bg-[#FF9874] p-3 rounded-full text-white">
+            <button className="bg-[#FF9874] p-3 rounded-full text-white hover:bg-[#E57A5a]">
                 <FiSearch />
             </button>
         </div>

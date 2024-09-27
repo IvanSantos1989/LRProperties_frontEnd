@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { hostelData } from '../assets/hostel-data';
@@ -76,7 +75,7 @@ const CheckoutCard = () => {
                             <option value="6">6 Hóspedes</option>
                         </select>
                     </div>
-                    <button className="w-full bg-[#FFA282] text-white p-3 rounded-xl font-bold">RESERVAR JÁ</button>
+                    <button className="w-full bg-[#FFA282] hover:bg-[#E57A5a] text-white p-3 rounded-xl font-bold">RESERVAR</button>
                 </div>
             </div>
             <div className="mt-8 border-b-2 py-4">
@@ -85,7 +84,7 @@ const CheckoutCard = () => {
                 <p className="mt-4">Nº Registo de Alojamento Local: {product.registrationNumber}</p>
             </div>
             <div className="mt-8 border-b-2 py-6 flex flex-col gap-5">
-                <h2 className="text-xl font-bold mb-4">Características especiais</h2>
+                <h2 className="text-xl font-bold mb-4">Comodidades</h2>
                 <div className='flex items-center justify-between px-9'>
                     <span className='flex items-center gap-2'><FaWifi /> Wifi</span>
                     <span className='flex items-center gap-2'><IoMdTv /> TV</span>
