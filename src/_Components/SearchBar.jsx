@@ -8,6 +8,8 @@ const SearchBar = () => {
     const [checkInDate, setCheckInDate] = useState(null);
     const [checkOutDate, setCheckOutDate] = useState(null);
     const [showGuestSelector, setShowGuestSelector] = useState(false);
+    const [adults, setAdults] = useState(1);
+    const [pets, setPets] = useState(0);
     const guestSelectorRef = useRef(null);
 
     const handleClickOutside = (event) => {
@@ -27,12 +29,12 @@ const SearchBar = () => {
         <div className="flex items-center justify-between bg-white p-4 rounded-full shadow-lg">
             <div className="flex items-center gap-3 border-r pr-3">
                 <div className="flex flex-col">
-                    <label className="text-xs text-gray-500">Onde</label>
-                    <input
+                    <label className="text-xs outline-none">PORTO</label>
+                    {/* <input
                         type="text"
-                        placeholder="Pesquisar localização"
+                        placeholder="Adicionar localização"
                         className="outline-none"
-                    />
+                    /> */}
                 </div>
             </div>
             <div className="flex items-center gap-3 border-r pr-3">
@@ -43,6 +45,7 @@ const SearchBar = () => {
                         onChange={(date) => setCheckInDate(date)}
                         placeholderText="Adicionar data"
                         className="outline-none"
+                        dateFormat={"dd/MM/yyyy"}
                     />
                 </div>
             </div>
@@ -54,6 +57,7 @@ const SearchBar = () => {
                         onChange={(date) => setCheckOutDate(date)}
                         placeholderText="Adicionar data"
                         className="outline-none"
+                        dateFormat={"dd/MM/yyyy"}
                     />
                 </div>
             </div>
@@ -62,13 +66,18 @@ const SearchBar = () => {
                     <label className="text-xs text-gray-500">Quem</label>
                     <input
                         type="text"
-                        placeholder="Adicionar hóspedes"
-                        className="outline-none"
+                        value={`${adults} Hóspede, ${pets} Animal`}
                         onFocus={() => setShowGuestSelector(true)}
+                        className="outline-none"
                     />
                     {showGuestSelector && (
                         <div ref={guestSelectorRef}>
-                            <GuestSelector />
+                            <GuestSelector 
+                                adults={adults}
+                                pets={pets}
+                                setAdults={setAdults}
+                                setPets={setPets}
+                            />
                         </div>
                     )}
                 </div>
