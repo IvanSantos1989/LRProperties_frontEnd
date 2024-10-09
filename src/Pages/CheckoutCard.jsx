@@ -28,7 +28,7 @@ const CheckoutCard = () => {
               <img
                 src={product.image}
                 alt={product.name}
-                className="col-span-2 w-full h-64 object-cover rounded-xl"
+                className="w-full h-48 object-cover rounded-xl"
               />
               <img
                 src={product.image2}
@@ -47,6 +47,11 @@ const CheckoutCard = () => {
               />
               <img
                 src={product.image5}
+                alt="Another Bedroom"
+                className="w-full h-48 object-cover rounded-xl"
+              />
+              <img
+                src={product.image6}
                 alt="Another Bedroom"
                 className="w-full h-48 object-cover rounded-xl"
               />
