@@ -1,10 +1,106 @@
-import img1 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-7.jpg"
-import img2 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-7.jpg"
-import img3 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-7.jpg"
-import img4 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-7.jpg"
-import img5 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-7.jpg"
-import img6 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-7.jpg"
+// cedofeita exclusive
+import img1 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-3.jpg"
+import img2 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-1.jpg"
+import img3 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-2.jpg"
+import img4 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-4.jpg"
+import img5 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-5.jpg"
+import img6 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-6.jpg"
+import img7 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-7.jpg"
+import img8 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-8.jpg"
+import img9 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-9.jpg"
+import img10 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-10.jpg"
+import img11 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-11.jpg"
 
+// cedofeita paradise
+import img12 from "./Cedofeita-Paradise/Cedofeita362Apartamento2-1.jpg"
+import img13 from "./Cedofeita-Paradise/Cedofeita362Apartamento2-2.jpg"
+import img14 from "./Cedofeita-Paradise/Cedofeita362Apartamento2-3.jpg"
+import img15 from "./Cedofeita-Paradise/Cedofeita362Apartamento2-4.jpg"
+import img16 from "./Cedofeita-Paradise/Cedofeita362Apartamento2-5.jpg"
+import img17 from "./Cedofeita-Paradise/Cedofeita362Apartamento2-6.jpg"
+import img18 from "./Cedofeita-Paradise/Cedofeita362Apartamento2-7.jpg"
+import img19 from "./Cedofeita-Paradise/Cedofeita362Apartamento2-8.jpg"
+import img20 from "./Cedofeita-Paradise/Cedofeita362Apartamento2-9.jpg"
+import img21 from "./Cedofeita-Paradise/Cedofeita362Apartamento2-11.jpg"
+import img22 from "./Cedofeita-Paradise/Cedofeita362Apartamento2-12.jpg"
+import img23 from "./Cedofeita-Paradise/Cedofeita362Apartamento2-13.jpg"
+import img24 from "./Cedofeita-Paradise/Cedofeita362Apartamento2-14.jpg"
+
+// charming studio
+import img38 from "./Charming-Studio/ALMÁRTIRESLIBERDADE2-14.jpg"
+import img25 from "./Charming-Studio/ALMÁRTIRESLIBERDADE2-1.jpg"
+import img26 from "./Charming-Studio/ALMÁRTIRESLIBERDADE2-2.jpg"
+import img27 from "./Charming-Studio/ALMÁRTIRESLIBERDADE2-3.jpg"
+import img28 from "./Charming-Studio/ALMÁRTIRESLIBERDADE2-4.jpg"
+import img29 from "./Charming-Studio/ALMÁRTIRESLIBERDADE2-5.jpg"
+import img30 from "./Charming-Studio/ALMÁRTIRESLIBERDADE2-6.jpg"
+import img31 from "./Charming-Studio/ALMÁRTIRESLIBERDADE2-7.jpg"
+import img32 from "./Charming-Studio/ALMÁRTIRESLIBERDADE2-8.jpg"
+import img33 from "./Charming-Studio/ALMÁRTIRESLIBERDADE2-9.jpg"
+import img34 from "./Charming-Studio/ALMÁRTIRESLIBERDADE2-10.jpg"
+import img35 from "./Charming-Studio/ALMÁRTIRESLIBERDADE2-11.jpg"
+import img36 from "./Charming-Studio/ALMÁRTIRESLIBERDADE2-12.jpg"
+import img37 from "./Charming-Studio/ALMÁRTIRESLIBERDADE2-13.jpg"
+import img39 from "./Charming-Studio/ALMÁRTIRESLIBERDADE2-15.jpg"
+import img40 from "./Charming-Studio/ALMÁRTIRESLIBERDADE2-16.jpg"
+import img41 from "./Charming-Studio/ALMÁRTIRESLIBERDADE2-17.jpg"
+import img42 from "./Charming-Studio/ALMÁRTIRESLIBERDADE2-18.jpg"
+import img43 from "./Charming-Studio/ALMÁRTIRESLIBERDADE2-19.jpg"
+import img44 from "./Charming-Studio/ALMÁRTIRESLIBERDADE2-20.jpg"
+
+// clerigos balcony
+import img45 from "./Clerigos-Balcony/CALDEIREIROS137-T1-2.jpg"
+import img46 from "./Clerigos-Balcony/CALDEIREIROS137-T1-3.jpg"
+import img47 from "./Clerigos-Balcony/CALDEIREIROS137-T1-4.jpg"
+import img48 from "./Clerigos-Balcony/CALDEIREIROS137-T1-5.jpg"
+import img49 from "./Clerigos-Balcony/CALDEIREIROS137-T1-6.jpg"
+import img50 from "./Clerigos-Balcony/CALDEIREIROS137-T1-7.jpg"
+import img51 from "./Clerigos-Balcony/CALDEIREIROS137-T1-9.jpg"
+import img52 from "./Clerigos-Balcony/CALDEIREIROS137-T1-10.jpg"
+import img53 from "./Clerigos-Balcony/CALDEIREIROS137-T1-11.jpg"
+import img54 from "./Clerigos-Balcony/CALDEIREIROS137-T1-13.jpg"
+import img55 from "./Clerigos-Balcony/CALDEIREIROS137-T1-14.jpg"
+import img56 from "./Clerigos-Balcony/CALDEIREIROS137-T1-15.jpg"
+import img57 from "./Clerigos-Balcony/CALDEIREIROS137-T1-16.jpg"
+import img58 from "./Clerigos-Balcony/CALDEIREIROS137-T1-17.jpg"
+
+// clerigos premium
+import img59 from "./Clerigos-Premium/T2CALDEIREIROS-1.jpg"
+import img60 from "./Clerigos-Premium/T2CALDEIREIROS-3.jpg"
+import img61 from "./Clerigos-Premium/T2CALDEIREIROS-4.jpg"
+import img62 from "./Clerigos-Premium/T2CALDEIREIROS-5.jpg"
+import img63 from "./Clerigos-Premium/T2CALDEIREIROS-6.jpg"
+import img64 from "./Clerigos-Premium/T2CALDEIREIROS-7.jpg"
+import img65 from "./Clerigos-Premium/T2CALDEIREIROS-8.jpg"
+import img66 from "./Clerigos-Premium/T2CALDEIREIROS-9.jpg"
+import img67 from "./Clerigos-Premium/T2CALDEIREIROS-10.jpg"
+import img68 from "./Clerigos-Premium/T2CALDEIREIROS-11.jpg"
+import img69 from "./Clerigos-Premium/T2CALDEIREIROS-13.jpg"
+import img70 from "./Clerigos-Premium/T2CALDEIREIROS-14.jpg"
+import img71 from "./Clerigos-Premium/T2CALDEIREIROS-15.jpg"
+import img72 from "./Clerigos-Premium/T2CALDEIREIROS-16.jpg"
+import img73 from "./Clerigos-Premium/T2CALDEIREIROS-17.jpg"
+import img74 from "./Clerigos-Premium/T2CALDEIREIROS-18.jpg"
+import img75 from "./Clerigos-Premium/T2CALDEIREIROS-19.jpg"
+import img76 from "./Clerigos-Premium/T2CALDEIREIROS-20.jpg"
+import img77 from "./Clerigos-Premium/T2CALDEIREIROS-21.jpg"
+import img78 from "./Clerigos-Premium/T2CALDEIREIROS-22.jpg"
+import img79 from "./Clerigos-Premium/T2CALDEIREIROS-23.jpg"
+import img80 from "./Clerigos-Premium/T2CALDEIREIROS-24.jpg"
+import img81 from "./Clerigos-Premium/T2CALDEIREIROS-25.jpg"
+import img82 from "./Clerigos-Premium/T2CALDEIREIROS-26.jpg"
+import img83 from "./Clerigos-Premium/T2CALDEIREIROS-27.jpg"
+import img84 from "./Clerigos-Premium/T2CALDEIREIROS-28.jpg"
+import img85 from "./Clerigos-Premium/T2CALDEIREIROS-29.jpg"
+
+// small studio
+import img91 from "./Small-Studio/smallstudio7.jpg"
+import img86 from "./Small-Studio/smallstudio1.jpg"
+import img87 from "./Small-Studio/smallstudio2.jpeg"
+import img88 from "./Small-Studio/smallstudio4.jpg"
+import img89 from "./Small-Studio/smallstudio5.jpg"
+import img90 from "./Small-Studio/smallstudio6.jpg"
+import img92 from "./Small-Studio/smallstudio8.jpeg"
 
 export const hostelData = [
     // informações dos alojamentos
@@ -18,11 +114,16 @@ export const hostelData = [
       hóspedes: "4",
       casa_banho: "1",
       image: img1,
-      image2: img1,
-      image3: img1,
-      image4: img1,
-      image5: img1,
-      image6: img1,
+      image2: img2,
+      image3: img3,
+      image4: img4,
+      image5: img5,
+      image6: img6,
+      image7: img7,
+      image8: img8,
+      image9: img9,
+      image10: img10,
+      image11: img11,
       descrição: "Welcome to our cozy and quiet retreat in the heart of Porto! Located on Rua de Cedofeita, one of the city's most vibrant and historic streets, our apartment offers a perfect blend of comfort and tranquility. With space for up to 4 guests, this charming spot is ideal for families, couples, or friends looking to explore the city's culture, shops, and cafes, all within walking distance. After a day of sightseeing, you can unwind in peace, thanks to the serene atmosphere of the apartment. We look forward to hosting you and making your stay unforgettable!",
       // Type : t1 
       // Sleeps: 4 people 
@@ -35,19 +136,26 @@ export const hostelData = [
     },
     {
         id: 2,
-        name: 'Cedofeita, Paradise',
+        name: 'Cedofeita Paradise',
         location: 'Praia do Cabedelo',
         price: '€ 100',
         quartos: "1",
         camas: "2",
         hóspedes: "4",
         casa_banho: "1",
-        image: img2,
-        image2: img2,
-        image3: img2,
-        image4: img2,
-        image5: img2,
-        image6: img2,
+        image: img12,
+        image2: img13,
+        image3: img14,
+        image4: img15,
+        image5: img16,
+        image6: img17,
+        image7: img18,
+        image8: img19,
+        image9: img20,
+        image10: img21,
+        image11: img22,
+        image12: img23,
+        image13: img24,
         descrição: "Welcome to our cozy and quiet retreat in the heart of Porto! Located on Rua de Cedofeita, one of the city's most vibrant and historic streets, our apartment offers a perfect blend of comfort and tranquility. With space for up to 4 guests, this charming spot is ideal for families, couples, or friends looking to explore the city's culture, shops, and cafes, all within walking distance. After a day of sightseeing, you can unwind in peace, thanks to the serene atmosphere of the apartment. We look forward to hosting you and making your stay unforgettable!",
         // Type : t1 
         // Sleeps: 4 people 
@@ -67,12 +175,26 @@ export const hostelData = [
         camas: "2",
        hóspedes: "2",
         casa_banho: "2",
-        image: img3,
-        image2: img3,
-        image3: img3,
-        image4: img3,
-        image5: img3,
-        image6: img3,
+        image: img38,
+        image2: img25,
+        image3: img26,
+        image4: img27,
+        image5: img28,
+        image6: img29,
+        image7: img30,
+        image8: img31,
+        image9: img32,
+        image10: img33,
+        image11: img34,
+        image12: img35,
+        image13: img36,
+        image14: img37,
+        image15: img39,
+        image16: img40,
+        image17: img41,
+        image18: img42,
+        image19: img43,
+        image20: img44,
         descrição: "Este maravilhoso apartamento de dois quartos é ideal para visitar o Porto e passar algum tempo na praia. O ambiente tranquilo e a piscina no condomínio tornam o espaço ideal para viajantes individuais, praticantes de surf, casais e famílias com crianças. As 2 varandas são maravilhosas: uma está orientada a sul e é ideal para refeições e lanches pois está equipada com mesa de madeira e cadeiras. A outra está orientada a poente onde pode descontrair a ler um livro no pôr-do-sol.",
         // Aguardando descrição oficial
         registro: "35644/AL"
@@ -86,13 +208,21 @@ export const hostelData = [
         camas: "2",
         hóspedes: "2",
         casa_banho: "1",
-        image: img4,
-        image2: img4,
-        image3: img4,
-        image4: img4,
-        image5: img4,
-        image6: img4,
-        descrição: "This cozy yet well-appointed apartment is located just steps from Porto’s iconic Clérigos Tower, providing the perfect base for exploring the city while enjoying modern comforts and a touch of outdoor space. Situated near Clérigos Tower, this apartment places you in the heart of Porto's historical district, within walking distance of many attractions like the Livraria Lello, Ribeira district, and São Bento Station. The area is brimming with restaurants, cafes, shops, and nightlife, yet the apartment offers a tranquil retreat from the city's lively energy.",
+        image: img45,
+        image2: img46,
+        image3: img47,
+        image4: img48,
+        image5: img49,
+        image6: img50,
+        image7: img51,
+        image8: img52,
+        image9: img53,
+        image10: img54,
+        image11: img55,
+        image12: img56,
+        image13: img57,
+        image14: img58,
+        descrição: "This cozy yet well-appointed apartment is located just steps from Porto's iconic Clérigos Tower, providing the perfect base for exploring the city while enjoying modern comforts and a touch of outdoor space. Situated near Clérigos Tower, this apartment places you in the heart of Porto's historical district, within walking distance of many attractions like the Livraria Lello, Ribeira district, and São Bento Station. The area is brimming with restaurants, cafes, shops, and nightlife, yet the apartment offers a tranquil retreat from the city's lively energy.",
         
     //  Interior & Layout
     // •	One Bedroom: A well-designed bedroom with a comfortable double or queen-size bed, high-quality linens, and ample closet space. Large windows in the bedroom might provide natural light and views of the city.
@@ -116,12 +246,33 @@ export const hostelData = [
         camas: "2",
         hóspedes: "4",
         casa_banho: "1",
-        image: img5,
-        image2: img5,
-        image3: img5,
-        image4: img5,
-        image5: img5,
-        image6: img5,
+        image: img59,
+        image2: img60,
+        image3: img61,
+        image4: img62,
+        image5: img63,
+        image6: img64,
+        image7: img65,
+        image8: img66,
+        image9: img67,
+        image10: img68,
+        image11: img69,
+        image12: img70,
+        image13: img71,
+        image14: img72,
+        image15: img73,
+        image16: img74,
+        image17: img75,
+        image18: img76,
+        image19: img77,
+        image20: img78,
+        image21: img79,
+        image22: img80,
+        image23: img81,
+        image24: img82,
+        image25: img83,
+        image26: img84,
+        image27: img85,
         descrição: "Spacious & Quiet Urban Retreat - This apartment, located in the heart of Porto near the Clérigos Tower, offers the rare combination of urban proximity and serenity. Though it sits within one of the city's most iconic and lively neighborhoods, it promises a quiet environment perfect for relaxation. Being steps away from the Clérigos Tower, the apartment offers easy access to Porto's main attractions—Livraria Lello, São Bento Station, the Porto Cathedral, and the lively Ribeira district. Numerous cafes, restaurants, and shopping options are right at your doorstep, but the apartment remains a calm oasis to return to after a day in the vibrant city. This apartment is ideal for those seeking a spacious, comfortable, and quiet retreat in the heart of Porto, combining the best of both convenience and tranquility.",
         
     //  Interior & Space
@@ -145,12 +296,13 @@ export const hostelData = [
         camas: "1",
         hóspedes: "2",
         casa_banho: "1",
-        image: img6,
-        image2: img6,
-        image3: img6,
-        image4: img6,
-        image5: img6,
-        image6: img6,
+        image: img91,
+        image2: img86,
+        image3: img87,
+        image4: img88,
+        image5: img89,
+        image6: img90,
+        image7: img92,
         descrição: "Este maravilhoso apartamento de dois quartos é ideal para visitar o Porto e passar algum tempo na praia. O ambiente tranquilo e a piscina no condomínio tornam o espaço ideal para viajantes individuais, praticantes de surf, casais e famílias com crianças. As 2 varandas são maravilhosas: uma está orientada a sul e é ideal para refeições e lanches pois está equipada com mesa de madeira e cadeiras. A outra está orientada a poente onde pode descontrair a ler um livro no pôr-do-sol.",
         // Aguardando descrição oficial
         registro: "35644/AL"

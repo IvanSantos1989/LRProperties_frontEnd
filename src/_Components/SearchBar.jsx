@@ -46,7 +46,7 @@ const SearchBar = () => {
           <DatePicker
             selected={checkInDate}
             onChange={(date) => setCheckInDate(date)}
-            placeholderText="Adicionar data"
+            placeholderText="Add date"
             className="outline-none"
             dateFormat={"dd/MM/yyyy"}
           />
@@ -58,7 +58,7 @@ const SearchBar = () => {
           <DatePicker
             selected={checkOutDate}
             onChange={(date) => setCheckOutDate(date)}
-            placeholderText="Adicionar data"
+            placeholderText="Add date"
             className="outline-none"
             dateFormat={"dd/MM/yyyy"}
           />
@@ -66,10 +66,10 @@ const SearchBar = () => {
       </div>
       <div className="flex items-center gap-3">
         <div className="flex flex-col relative">
-          <label className="text-xs text-gray-500">Quem</label>
+          <label className="text-xs text-gray-500">Who</label>
           <input
             type="text"
-            value={`${adults} Hóspede, ${pets} Animal`}
+            value={`${adults} Guest, ${pets} Animal`}
             onFocus={() => setShowGuestSelector(true)}
             onChange={(e) => {}}
             className="outline-none"

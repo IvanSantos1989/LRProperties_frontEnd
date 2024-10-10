@@ -10,7 +10,7 @@ const AboutUs = () => {
                     <div className="space-y-4">
                         <div className='w-48 flex flex-col items-center bg-[#F5F5F5] text-center p-5 drop-shadow-2x1 rounded-md'>
                             <MdHomeRepairService size={"1.8rem"} />
-                            <h1 className='text-xl font-bold'>Serviços</h1>
+                            <h1 className='text-xl font-bold'>Services</h1>
                             <p className='text-xs'>
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipisicing elit. Quisquam, voluptates.
@@ -19,7 +19,7 @@ const AboutUs = () => {
 
                         <div className='w-48 flex flex-col items-center bg-[#F5F5F5] text-center p-5 drop-shadow-2x1 rounded-md'>
                             <MdHomeRepairService size={"1.8rem"} />
-                            <h1 className='text-xl font-bold'>Serviços</h1>
+                            <h1 className='text-xl font-bold'>Services</h1>
                             <p className='text-xs'>
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipisicing elit. Quisquam, voluptates.
@@ -30,7 +30,7 @@ const AboutUs = () => {
                     <div className='space-y-4'>
                         <div className='w-48 flex flex-col items-center bg-[#F5F5F5] text-center p-5 drop-shadow-2x1 rounded-md'>
                             <MdHomeRepairService size={"1.8rem"} />
-                            <h1 className='text-xl font-bold'>Facilidades</h1>
+                            <h1 className='text-xl font-bold'>Amenities</h1>
                             <p className='text-xs'>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 Quisquam, voluptates.
@@ -39,7 +39,7 @@ const AboutUs = () => {
 
                         <div className='w-48 flex flex-col items-center bg-[#F5F5F5] text-center p-5 drop-shadow-2x1 rounded-md'>
                             <MdHomeRepairService size={"1.8rem"} />
-                            <h1 className='text-xl font-bold'>Facilidades</h1>
+                            <h1 className='text-xl font-bold'>Amenities</h1>
                             <p className='text-xs'>
                                 Lorem ipsum dolor sit amet,
                                 consectetur adipisicing elit. Quisquam, voluptates.
@@ -50,7 +50,7 @@ const AboutUs = () => {
 
                 <div className='w-11/12 md:w-1/2 space-y-5'>
                     <h1 className='text-6xl font-bold'>
-                        Saiba <span className='text-[#FF9874]'>Sobre Nós</span>
+                        Learn <span className='text-[#FF9874]'>About Us</span>
                     </h1>
                     <p className='text-sm text-gray-400'>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit.

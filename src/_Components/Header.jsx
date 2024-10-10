@@ -5,7 +5,7 @@ import PT from '../assets/portugal.png';
 import UK from '../assets/reino-unido.png';
 
 const Header = () => {
-    const [language, setLanguage] = useState('PT');
+    const [language, setLanguage] = useState('EN');
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const dropdownRef = useRef(null);
 

@@ -15,7 +15,7 @@ const Footer = () => {
                         <AiOutlineYoutube size={"2rem"} className='hover:text-[#E57A5A] cursor-pointer'/>
                         <FiFacebook size={"2rem"} className='hover:text-[#E57A5A] cursor-pointer'/>
                     </div>
-                    <p className='p-5 text-sm text-gray-400'>© 2024 LR Properties | Todos os Direitos Reservados</p>
+                    <p className='p-5 text-sm text-gray-400'>© 2024 LR Properties | All Rights Reserved</p>
                 </div>
             </footer>
         </div>
