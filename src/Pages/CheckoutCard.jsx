@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { hostelData } from '../assets/hostel-data';
@@ -19,8 +18,40 @@ const CheckoutCard = () => {
     const [adults, setAdults] = useState(1);
     const [showCarousel, setShowCarousel] = useState(false);
 
+    const images = [
+        product.image,
+        product.image2,
+        product.image3,
+        product.image4,
+        product.image5,
+        product.image6,
+        product.image7,
+        product.image8,
+        product.image9,
+        product.image10,
+        product.image11,
+        product.image12,
+        product.image13,
+        product.image14,
+        product.image15,
+        product.image16,
+        product.image17,
+        product.image18,
+        product.image19,
+        product.image20,
+        product.image21,
+        product.image22,
+        product.image23,
+        product.image24,
+        product.image25,
+        product.image26,
+        product.image27,
+    ].filter(Boolean);
+
     const handleOpenCarousel = () => {
-        setShowCarousel(true);
+        if (images.length > 0) {
+            setShowCarousel(true);
+        }
     };
 
     const handleCloseCarousel = () => {
@@ -56,43 +87,23 @@ const CheckoutCard = () => {
             <div className="grid grid-cols-3 gap-4">
                 <div className="col-span-2 mr-3">
                     <div className="grid grid-cols-2 gap-4">
-                        <img
-                            src={product.image}
-                            alt={product.name}
-                            className="w-full h-48 object-cover rounded-xl"
-                        />
-                        <img
-                            src={product.image2}
-                            alt="Kitchen"
-                            className="w-full h-48 object-cover rounded-xl"
-                        />
-                        <img
-                            src={product.image3}
-                            alt="Another Kitchen"
-                            className="w-full h-48 object-cover rounded-xl"
-                        />
-                        <img
-                            src={product.image4}
-                            alt="Bedroom"
-                            className="w-full h-48 object-cover rounded-xl"
-                        />
-                        <img
-                            src={product.image5}
-                            alt="Another Bedroom"
-                            className="w-full h-48 object-cover rounded-xl"
-                        />
-                        <img
-                            src={product.image6}
-                            alt="Another Bedroom"
-                            className="w-full h-48 object-cover rounded-xl"
-                        />
+                        {images.slice(0, 6).map((img, index) => (
+                            <img
+                                key={index}
+                                src={img}
+                                alt={`Image ${index + 1}`}
+                                className="w-full h-48 object-cover rounded-xl"
+                            />
+                        ))}
                     </div>
-                    <button
-                        onClick={handleOpenCarousel}
-                        className="w-full bg-[#FFA282] hover:bg-[#E57A5a] text-white p-3 rounded-xl font-bold"
-                    >
-                        View Photos
-                    </button>
+                    {images.length > 0 && (
+                        <button
+                            onClick={handleOpenCarousel}
+                            className="w-full bg-[#FFA282] hover:bg-[#E57A5a] text-white p-3 rounded-xl font-bold"
+                        >
+                            View Photos
+                        </button>
+                    )}
                 </div>
                 <div className="h-min shadow-md rounded-xl p-5">
                     <h1 className="text-2xl font-bold mb-4">{product.name}</h1>
@@ -177,7 +188,7 @@ const CheckoutCard = () => {
                     </span>
                 </div>
             </div>
-            {showCarousel && (
+            {showCarousel && images.length > 0 && (
                 <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
                     <button
                         onClick={handleCloseCarousel}
@@ -191,87 +202,11 @@ const CheckoutCard = () => {
                         renderArrowPrev={renderArrowPrev}
                         renderArrowNext={renderArrowNext}
                     >
-                        <div className="w-full h-screen">
-                            <img src={product.image} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image2} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image3} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image4} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image5} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image6} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image7} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image8} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image9} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image10} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image11} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image12} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image13} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image14} alt={product.name} className="w-full h-full object-contain" />  
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image15} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image16} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image17} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image18} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image19} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image20} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image21} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image22} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image23} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image24} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image25} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image26} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-screen">
-                            <img src={product.image27} alt={product.name} className="w-full h-full object-contain" />
-                        </div>
+                        {images.map((img, index) => (
+                            <div key={index} className="w-full h-screen">
+                                <img src={img} alt={`Image ${index + 1}`} className="w-full h-full object-contain" />
+                            </div>
+                        ))}
                     </Carousel>
                 </div>
             )}

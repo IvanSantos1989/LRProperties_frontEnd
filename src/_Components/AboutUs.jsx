@@ -1,5 +1,5 @@
-import React from 'react'
-import { MdHomeRepairService } from 'react-icons/md'
+import React from 'react';
+import { MdHomeRepairService } from 'react-icons/md';
 
 const AboutUs = () => {
     return (
@@ -8,7 +8,7 @@ const AboutUs = () => {
                 <div className='flex flex-col md:flex-row space-x-0 md:space-x-10 space-y-10 md:space-y-0'>
 
                     <div className="space-y-4">
-                        <div className='w-48 flex flex-col items-center bg-[#F5F5F5] text-center p-5 drop-shadow-2x1 rounded-md'>
+                        <div className='w-48 flex flex-col items-center bg-[#F5F5F5] text-center p-5 drop-shadow-2xl rounded-md'>
                             <MdHomeRepairService size={"1.8rem"} />
                             <h1 className='text-xl font-bold'>Services</h1>
                             <p className='text-xs'>
@@ -17,7 +17,7 @@ const AboutUs = () => {
                             </p>
                         </div>
 
-                        <div className='w-48 flex flex-col items-center bg-[#F5F5F5] text-center p-5 drop-shadow-2x1 rounded-md'>
+                        <div className='w-48 flex flex-col items-center bg-[#F5F5F5] text-center p-5 drop-shadow-2xl rounded-md'>
                             <MdHomeRepairService size={"1.8rem"} />
                             <h1 className='text-xl font-bold'>Services</h1>
                             <p className='text-xs'>
@@ -28,7 +28,7 @@ const AboutUs = () => {
                     </div>
 
                     <div className='space-y-4'>
-                        <div className='w-48 flex flex-col items-center bg-[#F5F5F5] text-center p-5 drop-shadow-2x1 rounded-md'>
+                        <div className='w-48 flex flex-col items-center bg-[#F5F5F5] text-center p-5 drop-shadow-2xl rounded-md'>
                             <MdHomeRepairService size={"1.8rem"} />
                             <h1 className='text-xl font-bold'>Amenities</h1>
                             <p className='text-xs'>
@@ -37,7 +37,7 @@ const AboutUs = () => {
                             </p>
                         </div>
 
-                        <div className='w-48 flex flex-col items-center bg-[#F5F5F5] text-center p-5 drop-shadow-2x1 rounded-md'>
+                        <div className='w-48 flex flex-col items-center bg-[#F5F5F5] text-center p-5 drop-shadow-2xl rounded-md'>
                             <MdHomeRepairService size={"1.8rem"} />
                             <h1 className='text-xl font-bold'>Amenities</h1>
                             <p className='text-xs'>
@@ -64,8 +64,52 @@ const AboutUs = () => {
                     </p>
                 </div>
             </div>
-        </div>
-    )
-}
 
-export default AboutUs
+            <div className='w-11/12 md:w-1/2 mt-10 mx-auto'>
+                <h2 className='text-3xl font-bold mb-5 text-center'>Any question or request?<br/>Get in touch.</h2>
+                <form className='space-y-4'>
+                    <div>
+                        <label className='block text-sm font-medium text-gray-700'>Name</label>
+                        <input
+                            type='text'
+                            className='mt-1 block w-full p-2 border border-[#FFA282] rounded-md shadow-sm focus:ring-[#FFA282] focus:border-[#FFA282] focus:outline-none'
+                            placeholder='Your Name'
+                        />
+                    </div>
+                    <div>
+                        <label className='block text-sm font-medium text-gray-700'>Phone</label>
+                        <input
+                            type='tel'
+                            className='mt-1 block w-full p-2 border border-[#FFA282] rounded-md shadow-sm focus:ring-[#FFA282] focus:border-[#FFA282] focus:outline-none'
+                            placeholder='Your Phone'
+                        />
+                    </div>
+                    <div>
+                        <label className='block text-sm font-medium text-gray-700'>Email</label>
+                        <input
+                            type='email'
+                            className='mt-1 block w-full p-2 border border-[#FFA282] rounded-md shadow-sm focus:ring-[#FFA282] focus:border-[#FFA282] focus:outline-none'
+                            placeholder='Your Email'
+                        />
+                    </div>
+                    <div>
+                        <label className='block text-sm font-medium text-gray-700'>Message</label>
+                        <textarea
+                            className='mt-1 block w-full p-2 border border-[#FFA282] rounded-md shadow-sm focus:ring-[#FFA282] focus:border-[#FFA282] focus:outline-none'
+                            rows='4'
+                            placeholder='Your Message'
+                        ></textarea>
+                    </div>
+                    <button
+                        type='submit'
+                        className='w-full bg-[#FF9874] hover:bg-[#E57A5a] text-white p-3 rounded-xl font-bold'
+                    >
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    );
+};
+
+export default AboutUs;
