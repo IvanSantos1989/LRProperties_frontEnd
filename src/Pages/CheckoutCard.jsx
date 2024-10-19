@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+// eslint-disable-next-line no-unused-vars
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { hostelData } from '../assets/hostel-data';
 import { FaWifi } from "react-icons/fa";
@@ -17,6 +18,10 @@ const CheckoutCard = () => {
     const [pets, setPets] = useState(0);
     const [adults, setAdults] = useState(1);
     const [showCarousel, setShowCarousel] = useState(false);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const images = [
         product.image,

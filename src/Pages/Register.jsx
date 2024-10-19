@@ -28,8 +28,8 @@ const Register = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-900">
-      <div className="bg-slate-800 border border-slate-400 rounded-lg p-8 shadow-xl w-full max-w-md backdrop-filter backdrop-blur-sm bg-opacity-30">
+    <div className="flex justify-center items-center h-screen bg-white">
+      <div className="bg-[#303030] border border-gray-300 rounded-lg p-8 shadow-xl w-full max-w-md">
         <h1 className="text-3xl text-white font-bold text-center mb-6">Register</h1>
         <form onSubmit={handleSubmit}>
           {error && <p className="text-red-500 text-sm mb-4">{error}</p>}

@@ -2,11 +2,9 @@ import React from 'react'
 import { CiLocationOn } from "react-icons/ci";
 import { Link } from 'react-router-dom';
 
-
 const HostelCard = ({ hostel, id }) => {
 
     return (
-
         <Link to={`/CheckoutCard/${id}`}>
             <div className="cursor-pointer hover:shadow-md p-2 rounded-xl hover:bg-[#F7F7F7] ">
                 <img src={hostel.image} alt={hostel.name} className="w-60' h-60 object-cover rounded-2xl" />
@@ -21,10 +19,15 @@ const HostelCard = ({ hostel, id }) => {
                         <p className="text-gray-600 text-md">{hostel.price}</p>
                         <p className='text-gray-600'>Per night</p>
                     </div>
+                    <div className="flex justify-end mt-4">
+                        <button className="bg-[#FFA282] hover:bg-[#E57A5a] text-white py-2 px-4 rounded-xl font-bold">
+                            Book
+                        </button>
+                    </div>
                 </div>
             </div>
         </Link>
     )
 };
 
-export default HostelCard
+export default HostelCard;
