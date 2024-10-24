@@ -172,12 +172,18 @@ const CheckoutCard = () => {
             <div className="mt-8 border-b-2 py-4">
                 <h2 className="text-xl font-bold mb-4">Description</h2>
                 <p>{product.descrição}</p>
+                <p className='mt-4'>{product.descrição2}</p>
+                <p className='mt-4'>{product.descrição3}</p>
+                <p className='mt-4'>{product.descrição4}</p>
+                <p className='mt-4'>{product.descrição5}</p>
+                <p className='mt-4'>{product.descrição6}</p>
+                <p className='mt-4'>{product.descrição7}</p>
                 <p className="mt-4">
                     Nº Local Accommodation Registration: {product.registrationNumber}
                 </p>
             </div>
             <div className="mt-8 border-b-2 py-6 flex flex-col gap-5">
-                <h2 className="text-xl font-bold mb-4">Amenities</h2>
+                <h2 className="text-xl font-bold mb-4">Main Amenities</h2>
                 <div className="flex items-center justify-between px-9">
                     <span className="flex items-center gap-2">
                         <FaWifi /> Wifi
