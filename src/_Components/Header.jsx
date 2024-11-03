@@ -1,13 +1,15 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useContext } from 'react';
 import { Button } from '@/Components/ui/button';
 import { Link } from 'react-router-dom';
 import PT from '../assets/portugal.png';
 import UK from '../assets/reino-unido.png';
+import { AuthContext } from '@/contexts/AuthContext';
 
 const Header = () => {
     const [language, setLanguage] = useState('EN');
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const dropdownRef = useRef(null);
+    const { token } = useContext(AuthContext)
 
     const handleLanguageChange = (lang) => {
         setLanguage(lang);
@@ -31,7 +33,6 @@ const Header = () => {
         <div className='w-full flex items-center justify-between px-10 p-5 shadow-sm bg-white'>
             <Link to="/"><p alt="logo" className='cursor-pointer text-xl font-bold'>LOGO</p></Link>
             <div className='flex items-center gap-2'>
-                <Link to="/Login" ><Button className="rounded-xl text-white">Login</Button></Link>
                 <div className="relative" ref={dropdownRef}>
                     <Button
                         className="rounded-xl text-white cursor-pointer flex items-center"
@@ -67,6 +68,13 @@ const Header = () => {
                         </div>
                     )}
                 </div>
+                {                    
+                    token == ""
+                        ? 
+                            <Link to="/Login" ><Button className="rounded-xl text-white">Login</Button></Link> 
+                        :
+                            <Link to="/Logout" ><Button className="rounded-xl text-white">Logout</Button></Link> 
+                }
             </div>
         </div>
     );

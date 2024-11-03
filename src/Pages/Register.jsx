@@ -1,21 +1,26 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, redirect, useNavigate } from "react-router-dom";
 import { BiUser } from "react-icons/bi";
 import { AiOutlineUnlock } from "react-icons/ai";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { AuthContext } from "@/contexts/AuthContext";
 
 const Register = () => {
-  const [fullName, setFullName] = useState("");
+
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [countryCode, setCountryCode] = useState("");
-  const [phone, setPhone] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
 
-  const handleSubmit = (e) => {
+  const { signUp } = useContext(AuthContext);
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!fullName || !email || !countryCode || !phone || !password || !confirmPassword) {
+    if (!name || !email || !countryCode || !phoneNumber || !password || !confirmPassword) {
       setError("Please fill in all fields");
       return;
     }
@@ -23,8 +28,15 @@ const Register = () => {
       setError("Passwords do not match");
       return;
     }
+
     setError("");
-    console.log("Full Name:", fullName, "Email:", email, "Phone:", `+${countryCode} ${phone}`, "Password:", password);
+
+    const phone = `+${countryCode}${phoneNumber}`
+    const data = {name, email, phone, password}
+
+    await signUp(data);
+    navigate("/")
+
   };
 
   return (
@@ -36,8 +48,8 @@ const Register = () => {
           <div className="relative my-4">
             <input
               type="text"
-              value={fullName}
-              onChange={(e) => setFullName(e.target.value)}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               className="block w-full py-2.5 px-4 text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#FFA282] peer"
               placeholder=" "
             />
@@ -79,8 +91,8 @@ const Register = () => {
               <div className="relative flex-1 ml-4">
                 <input
                   type="tel"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
+                  value={phoneNumber}
+                  onChange={(e) => setPhoneNumber(e.target.value)}
                   className="block w-full py-2.5 px-4 text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#FFA282] peer"
                   placeholder=" "
                 />

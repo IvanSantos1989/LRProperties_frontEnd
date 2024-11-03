@@ -7,10 +7,8 @@ import { Button } from '@/Components/ui/button'
 const Home = () => {
     return (
         <div>
-
             <Search />
             <NewestDeals />
-
         </div>
     )
 }
