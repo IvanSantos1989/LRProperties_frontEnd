@@ -18,7 +18,7 @@ export function AuthContextProvider({ children }) {
     try {
 
       const res = await axios.post('http://127.0.0.1:8000/api/users', data);
-      const token = res.data.data.token;
+      const token = res.data.token;
 
       setToken(token);
       localStorage.setItem("token", token)
@@ -35,7 +35,7 @@ export function AuthContextProvider({ children }) {
       const data = { email, password };
 
       const res = await axios.post('http://127.0.0.1:8000/api/login', data);
-      const token = res.data.data.token;
+      const token = res.data.token;
 
       setToken(token);
       localStorage.setItem("token", token)
