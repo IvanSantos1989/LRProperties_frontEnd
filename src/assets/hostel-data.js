@@ -1,16 +1,3 @@
-// cedofeita exclusive
-import img1 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-3.jpg"
-import img2 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-1.jpg"
-import img3 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-2.jpg"
-import img4 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-4.jpg"
-import img5 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-5.jpg"
-import img6 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-6.jpg"
-import img7 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-7.jpg"
-import img8 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-8.jpg"
-import img9 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-9.jpg"
-import img10 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-10.jpg"
-import img11 from "./Cedofeita-Exclusive/Cedofeita362Apartamento1-11.jpg"
-
 // cedofeita paradise
 import img12 from "./Cedofeita-Paradise/Cedofeita362Apartamento2-1.jpg"
 import img13 from "./Cedofeita-Paradise/Cedofeita362Apartamento2-2.jpg"
@@ -113,17 +100,6 @@ export const hostelData = [
       camas: "2",
       hóspedes: "4",
       casa_banho: "1",
-      image: img1,
-      image2: img2,
-      image3: img3,
-      image4: img4,
-      image5: img5,
-      image6: img6,
-      image7: img7,
-      image8: img8,
-      image9: img9,
-      image10: img10,
-      image11: img11,
       descrição: `Welcome to our cozy and quiet retreat in the heart of Porto! 
       Located on Rua de Cedofeita, one of the city's most vibrant and historic streets, our apartment offers a perfect blend of comfort and tranquility. 
       With space for up to 4 guests, this charming spot is ideal for families, couples, or friends looking to explore the city's culture, shops, cafes, all within walking distance. 
@@ -158,13 +134,13 @@ export const hostelData = [
         image12: img23,
         image13: img24,
         descrição: `Welcome to our cozy and quiet retreat in the heart of Porto! 
-      Located on Rua de Cedofeita, one of the city's most vibrant and historic streets, our apartment offers a perfect blend of comfort and tranquility. 
-      With space for up to 4 guests, this charming spot is ideal for families, couples, or friends looking to explore the city's culture, shops, cafes, all within walking distance. 
-      After a day of sightseeing, you can unwind in peace, thanks to the serene atmosphere of the apartment. 
-      We look forward to hosting you and making your stay unforgettable!`,
+        Located on Rua de Cedofeita, one of the city's most vibrant and historic streets, our apartment offers a perfect blend of comfort and tranquility. 
+        With space for up to 4 guests, this charming spot is ideal for families, couples, or friends looking to explore the city's culture, shops, cafes, all within walking distance. 
+        After a day of sightseeing, you can unwind in peace, thanks to the serene atmosphere of the apartment. 
+        We look forward to hosting you and making your stay unforgettable!`,
        
-      descrição2:`It has: living room, Kitchenette (fully equipped with stove, microwaves, oven, kettle, expresso machine).
-      We provide : Towels, bed linen, pillows.`,
+        descrição2:`It has: living room, Kitchenette (fully equipped with stove, microwaves, oven, kettle, expresso machine).
+        We provide : Towels, bed linen, pillows.`,
         
         registro: "35644/AL"
       },
@@ -336,12 +312,6 @@ export const hostelData = [
         camas: "2",
         hóspedes: "2",
         casa_banho: "2",
-        image: img1,
-        image2: img1,
-        image3: img1,
-        image4: img1,
-        image5: img1,
-        image6: img1,
         descrição: "Este maravilhoso apartamento de dois quartos é ideal para visitar o Porto e passar algum tempo na praia. O ambiente tranquilo e a piscina no condomínio tornam o espaço ideal para viajantes individuais, praticantes de surf, casais e famílias com crianças. As 2 varandas são maravilhosas: uma está orientada a sul e é ideal para refeições e lanches pois está equipada com mesa de madeira e cadeiras. A outra está orientada a poente onde pode descontrair a ler um livro no pôr-do-sol.",
         registro: "35644/AL"
       },
@@ -354,12 +324,6 @@ export const hostelData = [
         camas: "2",
         hóspedes: "2",
         casa_banho: "2",
-        image: img1,
-        image2: img1,
-        image3: img1,
-        image4: img1,
-        image5: img1,
-        image6: img1,
         descrição: "Este maravilhoso apartamento de dois quartos é ideal para visitar o Porto e passar algum tempo na praia. O ambiente tranquilo e a piscina no condomínio tornam o espaço ideal para viajantes individuais, praticantes de surf, casais e famílias com crianças. As 2 varandas são maravilhosas: uma está orientada a sul e é ideal para refeições e lanches pois está equipada com mesa de madeira e cadeiras. A outra está orientada a poente onde pode descontrair a ler um livro no pôr-do-sol.",
         registro: "35644/AL"
       },
@@ -372,12 +336,6 @@ export const hostelData = [
         camas: "2",
         hóspedes: "2",
         casa_banho: "2",
-        image: img1,
-        image2: img1,
-        image3: img1,
-        image4: img1,
-        image5: img1,
-        image6: img1,
         descrição: "Este maravilhoso apartamento de dois quartos é ideal para visitar o Porto e passar algum tempo na praia. O ambiente tranquilo e a piscina no condomínio tornam o espaço ideal para viajantes individuais, praticantes de surf, casais e famílias com crianças. As 2 varandas são maravilhosas: uma está orientada a sul e é ideal para refeições e lanches pois está equipada com mesa de madeira e cadeiras. A outra está orientada a poente onde pode descontrair a ler um livro no pôr-do-sol.",
         registro: "35644/AL"
       },

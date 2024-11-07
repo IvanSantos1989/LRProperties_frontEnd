@@ -1,7 +1,5 @@
-// eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { hostelData } from '../assets/hostel-data';
 import { FaWifi } from "react-icons/fa";
 import { IoMdTv } from "react-icons/io";
 import { TbToolsKitchen2, TbAirConditioning } from "react-icons/tb";
@@ -9,10 +7,12 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { fetchHostelData } from '@/api/house';
 
 const CheckoutCard = () => {
-    const { CheckoutCardId } = useParams();
-    const product = hostelData.find(item => item.id === parseInt(CheckoutCardId));
+    const { hostelId } = useParams();
+    const [hostel, setHostel] = useState(); 
+
     const [startDate, setStartDate] = useState(null);
     const [endDate, setEndDate] = useState(null);
     const [pets, setPets] = useState(0);
@@ -21,40 +21,13 @@ const CheckoutCard = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
+        (async () => {
+            setHostel(await fetchHostelData(hostelId))
+        })();
     }, []);
 
-    const images = [
-        product.image,
-        product.image2,
-        product.image3,
-        product.image4,
-        product.image5,
-        product.image6,
-        product.image7,
-        product.image8,
-        product.image9,
-        product.image10,
-        product.image11,
-        product.image12,
-        product.image13,
-        product.image14,
-        product.image15,
-        product.image16,
-        product.image17,
-        product.image18,
-        product.image19,
-        product.image20,
-        product.image21,
-        product.image22,
-        product.image23,
-        product.image24,
-        product.image25,
-        product.image26,
-        product.image27,
-    ].filter(Boolean);
-
     const handleOpenCarousel = () => {
-        if (images.length > 0) {
+        if (hostel.images.length > 0) {
             setShowCarousel(true);
         }
     };
@@ -73,7 +46,7 @@ const CheckoutCard = () => {
             >
                 &lt;
             </button>
-        );
+    );
 
     const renderArrowNext = (onClickHandler, hasNext, label) =>
         hasNext && (
@@ -85,23 +58,30 @@ const CheckoutCard = () => {
             >
                 &gt;
             </button>
-        );
+    );
 
+    if (!hostel) {
+        return <p>Loading hostel information...</p> /* do some designings blyat */ 
+    }
+    
     return (
+        
+        hostel && (
         <div className="max-w-6xl mx-auto px-4 py-9">
             <div className="grid grid-cols-3 gap-4">
                 <div className="col-span-2 mr-3">
                     <div className="grid grid-cols-2 gap-4">
-                        {images.slice(0, 6).map((img, index) => (
+                   
+                        {hostel.images.slice(0, 6).map((img, index) => (
                             <img
                                 key={index}
-                                src={img}
+                                src={`../../public/images/${img}`}
                                 alt={`Image ${index + 1}`}
                                 className="w-full h-48 object-cover rounded-xl"
                             />
                         ))}
                     </div>
-                    {images.length > 0 && (
+                    {hostel.images.length > 0 && (
                         <button
                             onClick={handleOpenCarousel}
                             className="w-full bg-[#FFA282] hover:bg-[#E57A5a] text-white p-3 rounded-xl font-bold"
@@ -111,12 +91,12 @@ const CheckoutCard = () => {
                     )}
                 </div>
                 <div className="h-min shadow-md rounded-xl p-5">
-                    <h1 className="text-2xl font-bold mb-4">{product.name}</h1>
+                    <h1 className="text-2xl font-bold mb-4">{hostel.title}</h1>
                     <p className="mb-2 text-sm">
-                        {product.hóspedes} Guests • {product.quartos} Bedroom •{" "}
-                        {product.camas} Bed • {product.casa_banho} Bathroom
+                        {hostel.amenities.guests} Guests • {hostel.amenities.bedrooms} Bedroom •{" "}
+                        {hostel.amenities.beds} Bed • {hostel.amenities.badrooms} Bathroom
                     </p>
-                    <p className="font-bold text-2xl mb-4">{product.price} Per night</p>
+                    <p className="font-bold text-2xl mb-4">{hostel.price_per_night} Per night</p>
                     <div className="border rounded p-4 mb-4">
                         <h2 className="font-bold mb-2">DATES</h2>
                         <DatePicker
@@ -171,15 +151,9 @@ const CheckoutCard = () => {
             </div>
             <div className="mt-8 border-b-2 py-4">
                 <h2 className="text-xl font-bold mb-4">Description</h2>
-                <p>{product.descrição}</p>
-                <p className='mt-4'>{product.descrição2}</p>
-                <p className='mt-4'>{product.descrição3}</p>
-                <p className='mt-4'>{product.descrição4}</p>
-                <p className='mt-4'>{product.descrição5}</p>
-                <p className='mt-4'>{product.descrição6}</p>
-                <p className='mt-4'>{product.descrição7}</p>
+                <p style={{whiteSpace: 'pre-wrap'}}>{hostel.description}</p>
                 <p className="mt-4">
-                    Nº Local Accommodation Registration: {product.registrationNumber}
+                    Nº Local Accommodation Registration: {hostel.accommodation_reg_number}
                 </p>
             </div>
             <div className="mt-8 border-b-2 py-6 flex flex-col gap-5">
@@ -199,7 +173,7 @@ const CheckoutCard = () => {
                     </span>
                 </div>
             </div>
-            {showCarousel && images.length > 0 && (
+            {showCarousel && hostel.images.length > 0 && (
                 <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
                     <button
                         onClick={handleCloseCarousel}
@@ -213,15 +187,16 @@ const CheckoutCard = () => {
                         renderArrowPrev={renderArrowPrev}
                         renderArrowNext={renderArrowNext}
                     >
-                        {images.map((img, index) => (
+                        {hostel.images.map((img, index) => (
                             <div key={index} className="w-full h-screen">
-                                <img src={img} alt={`Image ${index + 1}`} className="w-full h-full object-contain" />
+                                <img src={`../../public/images/${img}`} alt={`Image ${index + 1}`} className="w-full h-full object-contain" />
                             </div>
                         ))}
                     </Carousel>
                 </div>
             )}
         </div>
+        )
     );
 };
 

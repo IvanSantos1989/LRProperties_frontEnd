@@ -8,7 +8,6 @@ import Logout from "./Pages/Logout"
 import Register from "./Pages/Register"
 import { AuthContextProvider } from "./contexts/AuthContext"
 
-
 function App() {
 
   return (
@@ -17,7 +16,7 @@ function App() {
       <Header />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/CheckoutCard/:CheckoutCardId" element={<CheckoutCard />} />
+            <Route path="/CheckoutCard/:hostelId" element={<CheckoutCard />} />
 
 
             <Route path="/Login" element={<Login/>} />
