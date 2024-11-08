@@ -1,7 +1,7 @@
 import React from 'react'
-import NewestDeals from '@/_Components/NewestDeals'
-import Search from '@/_Components/Search'
-import { Button } from '@/Components/ui/button'
+import NewestDeals from '@/Components/Home/NewestDeals'
+import Search from '@/Components/Home/Search'
+import { Button } from '@/Components/micro/Button'
 
 
 const Home = () => {

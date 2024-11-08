@@ -8,8 +8,9 @@ import 'react-datepicker/dist/react-datepicker.css';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { fetchHostelData } from '@/api/house';
+import { ClipLoader, MoonLoader } from 'react-spinners';
 
-const CheckoutCard = () => {
+const Hostel = () => {
     const { hostelId } = useParams();
     const [hostel, setHostel] = useState(); 
 
@@ -61,7 +62,12 @@ const CheckoutCard = () => {
     );
 
     if (!hostel) {
-        return <p>Loading hostel information...</p> /* do some designings blyat */ 
+        return (
+            <div style={{height: "69vh"}} className='w-full flex flex-col items-center justify-center'>
+                <MoonLoader className='my-8' size={90} color='#FFA282' speedMultiplier={0.3} />
+                <p className='text-3xl text-gray-400 dark:text-white'>Loading your hostel...</p>
+            </div>
+        )  
     }
     
     return (
@@ -71,14 +77,13 @@ const CheckoutCard = () => {
             <div className="grid grid-cols-3 gap-4">
                 <div className="col-span-2 mr-3">
                     <div className="grid grid-cols-2 gap-4">
-                   
-                        {hostel.images.slice(0, 6).map((img, index) => (
-                            <img
-                                key={index}
-                                src={`../../public/images/${img}`}
-                                alt={`Image ${index + 1}`}
-                                className="w-full h-48 object-cover rounded-xl"
-                            />
+                        {hostel.images.slice(0, 6).map((img, index) =>(
+                                <img
+                                    key={index}
+                                    src={`/images/${img}`}
+                                    alt={`Image ${index + 1}`}
+                                    className="w-full h-48 object-cover rounded-xl"
+                                />
                         ))}
                     </div>
                     {hostel.images.length > 0 && (
@@ -200,4 +205,4 @@ const CheckoutCard = () => {
     );
 };
 
-export default CheckoutCard;
+export default Hostel;

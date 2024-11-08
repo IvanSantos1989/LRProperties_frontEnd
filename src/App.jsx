@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom"
 import Home from "./Pages/Home"
-import CheckoutCard from "./Pages/CheckoutCard"
-import Header from "./_Components/Header"
-import Footer from "./_Components/Footer"
-import Login from "./Pages/Login"
-import Logout from "./Pages/Logout"
-import Register from "./Pages/Register"
+import Hostel from "./Pages/Hostel/Show"
+import Header from "./Components/Header"
+import Footer from "./Components/Footer"
+import Login from "./Pages/Auth/Login"
+import Logout from "./Pages/Auth/Logout"
+import Register from "./Pages/Auth/Register"
 import { AuthContextProvider } from "./contexts/AuthContext"
 
 function App() {
@@ -16,13 +16,10 @@ function App() {
       <Header />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/CheckoutCard/:hostelId" element={<CheckoutCard />} />
-
-
+            <Route path="/CheckoutCard/:hostelId" element={<Hostel />} />
             <Route path="/Login" element={<Login/>} />
             <Route path="/Logout" element={<Logout />} />
             <Route path="/Register" element={<Register/>} />
-
           </Routes>
       <Footer />
       </AuthContextProvider>     

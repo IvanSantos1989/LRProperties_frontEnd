@@ -7,7 +7,7 @@ const HostelCard = ({ hostel }) => {
     return (
         <Link to={`/CheckoutCard/${hostel.id}`}>
             <div className="cursor-pointer hover:shadow-md p-2 rounded-xl hover:bg-[#F7F7F7] ">
-                <img src={`../../public/images/${hostel.images[0]}`} alt={hostel.title} className="w-60' h-60 object-cover rounded-2xl" />
+                <img src={`/images/${hostel.images[0]}`} alt={hostel.title} className="w-60' h-60 object-cover rounded-2xl" />
                 <div className="p-4 ">
                     <h3 className="text-lg font-medium text-gray-900">{hostel.title}</h3>
 

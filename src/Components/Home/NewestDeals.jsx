@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import HostelCard from './HotelCard';
+import HostelCard from './Card';
 import AboutUs from './AboutUs';
 import { fetchHostels } from '@/api/house';
 
