@@ -1,6 +1,7 @@
 import { fetchHostels } from '@/api/house';
 import React, { useEffect, useState } from 'react'
 import LoadingSpinner from './LoadingSpinner';
+import HostelCard from '../Home/Card';
 
 function HostelList() {
 

@@ -16,10 +16,10 @@ function App() {
       <Header />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/CheckoutCard/:hostelId" element={<Hostel />} />
-            <Route path="/Login" element={<Login/>} />
-            <Route path="/Logout" element={<Logout />} />
-            <Route path="/Register" element={<Register/>} />
+            <Route path="/hostel/:hostelId" element={<Hostel />} />
+            <Route path="/login" element={<Login/>} />
+            <Route path="/logout" element={<Logout />} />
+            <Route path="/register" element={<Register/>} />
           </Routes>
       <Footer />
       </AuthContextProvider>     

@@ -71,9 +71,9 @@ const Header = () => {
                 {                    
                     token == ""
                         ? 
-                            <Link to="/Login" ><Button className="rounded-xl text-white">Login</Button></Link> 
+                            <Link to="/login" ><Button className="rounded-xl text-white">Login</Button></Link> 
                         :
-                            <Link to="/Logout" ><Button className="rounded-xl text-white">Logout</Button></Link> 
+                            <Link to="/logout" ><Button className="rounded-xl text-white">Logout</Button></Link> 
                 }
             </div>
         </div>

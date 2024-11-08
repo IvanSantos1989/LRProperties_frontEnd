@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const HostelCard = ({ hostel }) => {
 
     return (
-        <Link to={`/CheckoutCard/${hostel.id}`}>
+        <Link to={`/hostel/${hostel.id}`}>
             <div className="cursor-pointer hover:shadow-md p-2 rounded-xl hover:bg-[#F7F7F7] ">
                 <img src={`/images/${hostel.images[0]}`} alt={hostel.title} className="w-60' h-60 object-cover rounded-2xl" />
                 <div className="p-4 ">

@@ -63,9 +63,9 @@ const Hostel = () => {
 
     if (!hostel) {
         return (
-            <div style={{height: "69vh"}}>
+            <div style={{height: "69vh"}} className='flex justify-center'>
                 <LoadingSpinner speed="0.3" color="#FFA282" size="90" 
-                title="Loading your hostel..." margin="8"/> /* TEST */
+                title="Loading your hostel..." margin="8"/>
             </div>
         )  
     }
