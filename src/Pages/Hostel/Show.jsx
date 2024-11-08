@@ -8,7 +8,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { fetchHostelData } from '@/api/house';
-import { ClipLoader, MoonLoader } from 'react-spinners';
+import LoadingSpinner from '@/Components/micro/LoadingSpinner';
 
 const Hostel = () => {
     const { hostelId } = useParams();
@@ -63,9 +63,9 @@ const Hostel = () => {
 
     if (!hostel) {
         return (
-            <div style={{height: "69vh"}} className='w-full flex flex-col items-center justify-center'>
-                <MoonLoader className='my-8' size={90} color='#FFA282' speedMultiplier={0.3} />
-                <p className='text-3xl text-gray-400 dark:text-white'>Loading your hostel...</p>
+            <div style={{height: "69vh"}}>
+                <LoadingSpinner speed="0.3" color="#FFA282" size="90" 
+                title="Loading your hostel..." margin="8"/> /* TEST */
             </div>
         )  
     }
