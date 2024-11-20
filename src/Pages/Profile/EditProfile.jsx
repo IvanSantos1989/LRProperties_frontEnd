@@ -13,7 +13,6 @@ const EditProfile = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
-  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchProfile = async () => {

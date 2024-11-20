@@ -18,4 +18,6 @@ const fetchHostelData = async (id) => {
     }
 }
 
+
+
 export {fetchHostels, fetchHostelData}

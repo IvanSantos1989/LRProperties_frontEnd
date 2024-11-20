@@ -10,7 +10,9 @@ import { AuthContextProvider } from "./contexts/AuthContext"
 import EditProfile from "./Pages/Profile/EditProfile"
 import ForgotPassword from "./Pages/Password/ForgotPassword"
 import ResetPassword from "./Pages/Password/ResetPassword"
-import AdminDashboard from "./Pages/Admin/AdminDashboard"
+import Dashboard from "./Pages/Admin/Dashboard"
+import Properties from "./Pages/Admin/Properties"
+import Users from "./Pages/Admin/Users"
 
 function App() {
 
@@ -18,17 +20,19 @@ function App() {
     <div>
       <AuthContextProvider>
       <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/hostel/:hostelId" element={<Hostel />} />
-            <Route path="/login" element={<Login/>} />
-            <Route path="/logout" element={<Logout />} />
-            <Route path="/register" element={<Register/>} />
-            <Route path="/profile/edit" element={<EditProfile />} />
-            <Route path="/forgot-password" element={<ForgotPassword />} />
-            <Route path="/reset-password" element={<ResetPassword />} />
-            <Route path="/admin/dashboard" element={<AdminDashboard />} />
-          </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/hostel/:hostelId" element={<Hostel />} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/logout" element={<Logout />} />
+        <Route path="/register" element={<Register/>} />
+        <Route path="/profile/edit" element={<EditProfile />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
+        <Route path="/admin/dashboard" element={<Dashboard />} />
+        <Route path="/admin/dashboard/properties" element={<Properties />} />
+        <Route path="/admin/dashboard/users" element={<Users />} />
+      </Routes>
       <Footer />
       </AuthContextProvider>     
     </div>
