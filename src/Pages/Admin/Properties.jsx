@@ -13,6 +13,7 @@ const Properties = () => {
         const response = await axios.get('http://127.0.0.1:8000/api/houses');
         setProperties(response.data);
       } catch (error) {
+        console.error("Error fetching properties data:", error);
         setError("Failed to fetch properties data.");
       }
     };
@@ -28,19 +29,20 @@ const Properties = () => {
             title="Loading your properties..." margin="8"/>
         </div>
     )  
-  }
+}
+
 
   return (
-  <div className="flex justify-center items-center flex-col ">
+<div className="flex justify-center items-center flex-col ">
   <div className="flex justify-center items-center flex-col mt-10"> 
-    <h2 className="text-4xl mb-4">All Properties</h2>
+    <h2 className="text-4xl mb-4">Properties</h2>
     <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-9/12">
-      ADD PROPERTY
+      ADD HOUSE
     </button>
     <Link to="/admin/dashboard" class="font-medium text-blue-600 dark:text-blue-500 hover:underline mt-2">Back</Link> &nbsp;
   </div>
   <div className="h-[50vh] w-9/12 my-10">
-    <div class="relative overflow-x-auto shadow-md sm:rounded-lg h-80">
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
       <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
           <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
               <tr>
@@ -64,7 +66,7 @@ const Properties = () => {
           <br />
           <tbody>
               {properties.map(property => (
-                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                   <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                       {property.title}
                   </th>
@@ -81,7 +83,7 @@ const Properties = () => {
                     <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a> &nbsp;
                     <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Delete</a>
                   </td>
-                </tr>              
+              </tr>
               ))}
           </tbody>
       </table>
