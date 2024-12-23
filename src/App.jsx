@@ -13,6 +13,7 @@ import ResetPassword from "./Pages/Password/ResetPassword"
 import Dashboard from "./Pages/Admin/Dashboard"
 import Properties from "./Pages/Admin/Properties"
 import Users from "./Pages/Admin/Users"
+import Reservations from "./Pages/Admin/Reservations"
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
         <Route path="/admin/dashboard" element={<Dashboard />} />
         <Route path="/admin/dashboard/properties" element={<Properties />} />
         <Route path="/admin/dashboard/users" element={<Users />} />
+        <Route path="/admin/dashboard/reservations" element={<Reservations />} />
       </Routes>
       <Footer />
       </AuthContextProvider>     
