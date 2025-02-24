@@ -101,7 +101,7 @@ const Hostel = () => {
                         {hostel.amenities.guests} Guests • {hostel.amenities.bedrooms} Bedroom •{" "}
                         {hostel.amenities.beds} Bed • {hostel.amenities.badrooms} Bathroom
                     </p>
-                    <p className="font-bold text-2xl mb-4">{hostel.price_per_night} Per night</p>
+                    <p className="font-bold text-2xl mb-4">{hostel.price_per_night}€ Per night</p>
                     <div className="border rounded p-4 mb-4">
                         <h2 className="font-bold mb-2">DATES</h2>
                         <DatePicker

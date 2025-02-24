@@ -41,7 +41,7 @@ const SearchBar = () => {
         </div>
       </div>
       <div className="flex items-center gap-3 border-r pr-3">
-        <div className="flex flex-col">
+        <div className="flex flex-col ml-4">
           <label className="text-xs text-gray-500">Check-in</label>
           <DatePicker
             selected={checkInDate}
@@ -53,7 +53,7 @@ const SearchBar = () => {
         </div>
       </div>
       <div className="flex items-center gap-3 border-r pr-3">
-        <div className="flex flex-col">
+        <div className="flex flex-col ml-4">
           <label className="text-xs text-gray-500">Check-out</label>
           <DatePicker
             selected={checkOutDate}
@@ -65,7 +65,7 @@ const SearchBar = () => {
         </div>
       </div>
       <div className="flex items-center gap-3">
-        <div className="flex flex-col relative">
+        <div className="flex flex-col relative ml-4">
           <label className="text-xs text-gray-500">Who</label>
           <input
             type="text"

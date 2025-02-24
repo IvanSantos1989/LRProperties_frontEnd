@@ -16,7 +16,7 @@ const HostelCard = ({ hostel }) => {
                         <p className='text-sm text-gray-600 m-1 '>Porto, Portugal</p>
                     </div>
                     <div className="flex items-center gap-3  ">
-                        <p className="text-gray-600 text-md">{hostel.price_per_night}</p>
+                        <p className="text-gray-600 text-md">{hostel.price_per_night}€</p>
                         <p className='text-gray-600'>Per night</p>
                     </div>
                     <div className="flex justify-end mt-4">
