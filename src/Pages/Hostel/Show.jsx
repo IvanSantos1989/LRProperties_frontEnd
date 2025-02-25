@@ -18,6 +18,7 @@ const Hostel = () => {
     const [endDate, setEndDate] = useState(null);
     const [pets, setPets] = useState(0);
     const [adults, setAdults] = useState(1);
+    const [totalPrice, setTotalPrice] = useState(0);
     const [showCarousel, setShowCarousel] = useState(false);
 
     useEffect(() => {
@@ -26,6 +27,16 @@ const Hostel = () => {
             setHostel(await fetchHostelData(hostelId))
         })();
     }, []);
+
+    useEffect(() => {
+        if (hostel) {
+            const basePrice = hostel.price_per_night;
+            const guestPrice = basePrice * adults;
+            const petPrice = pets * 5;
+            const nights = endDate && startDate ? (endDate - startDate) / (1000 * 60 * 60 * 24) : 0;
+            setTotalPrice((guestPrice + petPrice) * nights);
+        }
+    }, [adults, pets, startDate, endDate, hostel]);
 
     const handleOpenCarousel = () => {
         if (hostel.images.length > 0) {
@@ -131,7 +142,7 @@ const Hostel = () => {
                         <div className="flex justify-between items-center">
                             <span>Guests</span>
                             <div className="flex items-center">
-                                <button onClick={() => setAdults(adults > 0 ? adults - 1 : 0)}>-</button>
+                                <button onClick={() => setAdults(adults > 1 ? adults - 1 : 1)}>-</button>
                                 <span className="mx-2">{adults}</span>
                                 <button onClick={() => setAdults(adults + 1)}>+</button>
                             </div>
@@ -148,6 +159,8 @@ const Hostel = () => {
                             </div>
                         </div>
                     </div>
+
+                    <p className="font-bold text-2xl mb-4">Total: {totalPrice}€</p>
 
                     <button className="w-full bg-[#FFA282] hover:bg-[#E57A5a] text-white p-3 rounded-xl font-bold">
                         Book Now
