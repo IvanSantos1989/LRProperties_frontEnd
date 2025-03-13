@@ -20,22 +20,22 @@ function App() {
   return (
     <div>
       <AuthContextProvider>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/hostel/:hostelId" element={<Hostel />} />
-        <Route path="/login" element={<Login/>} />
-        <Route path="/logout" element={<Logout />} />
-        <Route path="/register" element={<Register/>} />
-        <Route path="/profile/edit" element={<EditProfile />} />
-        <Route path="/forgot-password" element={<ForgotPassword />} />
-        <Route path="/reset-password" element={<ResetPassword />} />
-        <Route path="/admin/dashboard" element={<Dashboard />} />
-        <Route path="/admin/dashboard/properties" element={<Properties />} />
-        <Route path="/admin/dashboard/users" element={<Users />} />
-        <Route path="/admin/dashboard/reservations" element={<Reservations />} />
-      </Routes>
-      <Footer />
+        <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/hostel/:hostelId" element={<Hostel />} />
+            <Route path="/login" element={<Login/>} />
+            <Route path="/logout" element={<Logout />} />
+            <Route path="/register" element={<Register/>} />
+            <Route path="/profile/edit" element={<EditProfile />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
+            <Route path="/reset-password" element={<ResetPassword />} />
+            <Route path="/admin/dashboard" element={<Dashboard />} />
+            <Route path="/admin/dashboard/properties" element={<Properties />} />
+            <Route path="/admin/dashboard/users" element={<Users />} />
+            <Route path="/admin/dashboard/reservations" element={<Reservations />} />
+          </Routes>
+        <Footer />
       </AuthContextProvider>     
     </div>
   )

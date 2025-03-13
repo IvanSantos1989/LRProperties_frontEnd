@@ -5,9 +5,13 @@ import axios from "axios";
 
 const EditProfile = () => {
   const { token } = useContext(AuthContext);
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
+
   const [user, setUser] = useState({
-    name: 'abc', email: 'email', phone: '123456789', countryCode: '351', newPassword: '1234', confirmNewPassword: '1234', currentPassword: '123'
+    name: '', email: '', phone: '', countryCode: '351', newPassword: '', confirmNewPassword: '', currentPassword: ''
   })
+  
   const onChangeUserNewInfo = (event) => {
     const { name, value } = event.target;
     setUser(prevState => ({
@@ -16,22 +20,18 @@ const EditProfile = () => {
     }))
   }
 
-  const [error, setError] = useState("");
-  const [success, setSuccess] = useState("");
-
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const response = await axios.get(`http://127.0.0.1:8000/users`, {
+        const response = await axios.get(`http://127.0.0.1:8000/api/user`, {
           headers: {
             Authorization: `Bearer ${token}`
           }
         });
-        const { name, email, phone, country_code } = response.data;
-        setName(name || "");
-        setEmail(email || "");
-        setPhone(phone || "");
-        setCountryCode(country_code || "");
+
+        const { name, email, phone } = response.data;
+        setUser(() => ({ "name": name, "email": email, "phone": phone }))
+
       } catch (error) {
         console.error("Error fetching profile data:", error);
       }
@@ -86,6 +86,7 @@ const EditProfile = () => {
               className="block w-full py-2.5 px-4 text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#FFA282] peer"
               placeholder=" "
               name="name"
+              required
             />
             <label className="absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-[#FFA282] peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
               Full Name
@@ -114,6 +115,7 @@ const EditProfile = () => {
                 className="block w-[50px] py-2.5 px-2 text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#FFA282] peer"
                 placeholder=" "
                 name="countryCode"
+                required
               />
               <label className="absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-[#FFA282] peer-placeholder-shown:translate-y-0 peer-placeholder-shown:left-3 peer-focus:scale-75 peer-focus:-translate-y-6">
                 Code
@@ -127,6 +129,8 @@ const EditProfile = () => {
                 className="block w-full py-2.5 px-4 text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#FFA282] peer"
                 placeholder=" "
                 name="phone"
+                required
+   
               />
               <label className="absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-[#FFA282] peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
                 Phone
@@ -137,12 +141,12 @@ const EditProfile = () => {
             <div className="w-[48%]">
               <input
                 type="password"
-                value={user.newPassword}
                 onChange={onChangeUserNewInfo}
                 className="block w-full py-2.5 px-4 text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#FFA282] peer"
                 placeholder=" "
                 autoComplete="new-password"
                 name="newPassword"
+                required
               />
               <label className="absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-[#FFA282] peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
                 New Password
@@ -151,11 +155,11 @@ const EditProfile = () => {
             <div className="w-[48%]">
               <input
                 type="password"
-                value={user.confirmNewPassword}
                 onChange={onChangeUserNewInfo}
                 className="block w-full py-2.5 px-4 text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#FFA282] peer"
                 placeholder=" "
                 name="confirmNewPassword"
+                required
               />
               <label className="absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-[#FFA282] peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
                 Confirm Password
@@ -165,11 +169,11 @@ const EditProfile = () => {
           <div className="relative my-7">
           <input
               type="password"
-              value={user.currentPassword}
               onChange={onChangeUserNewInfo}
               className="block w-full py-2.5 px-4 text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#FFA282] peer"
               placeholder=" "
               name="currentPassword"
+              required
             />
             <label className="absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-[#FFA282] peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
               Current Password
