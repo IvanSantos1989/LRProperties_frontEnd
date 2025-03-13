@@ -133,11 +133,7 @@ export const hostelData = [
         image11: img22,
         image12: img23,
         image13: img24,
-        descrição: `Welcome to our cozy and quiet retreat in the heart of Porto! 
-        Located on Rua de Cedofeita, one of the city's most vibrant and historic streets, our apartment offers a perfect blend of comfort and tranquility. 
-        With space for up to 4 guests, this charming spot is ideal for families, couples, or friends looking to explore the city's culture, shops, cafes, all within walking distance. 
-        After a day of sightseeing, you can unwind in peace, thanks to the serene atmosphere of the apartment. 
-        We look forward to hosting you and making your stay unforgettable!`,
+        descrição: `Welcome to our cozy and quiet retreat in the heart of Porto! Located on Rua de Cedofeita, one of the city's most vibrant and historic streets, our apartment offers a perfect blend of comfort and tranquility. With space for up to 4 guests, this charming spot is ideal for families, couples, or friends looking to explore the city's culture, shops, cafes, all within walking distance. After a day of sightseeing, you can unwind in peace, thanks to the serene atmosphere of the apartment. We look forward to hosting you and making your stay unforgettable!`,
        
         descrição2:`It has: living room, Kitchenette (fully equipped with stove, microwaves, oven, kettle, expresso machine).
         We provide : Towels, bed linen, pillows.`,
