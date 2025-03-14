@@ -10,7 +10,11 @@ import { AuthContext } from '@/contexts/AuthContext';
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import Logo from '../assets/LogoLR.webp.png';
+=======
+import Logo from '../assets/logo.png';
+>>>>>>> Stashed changes
 =======
 import Logo from '../assets/logo.png';
 >>>>>>> Stashed changes
@@ -62,6 +66,9 @@ const Header = () => {
             <Link to="/"><img src={Logo} className='cursor-pointer w-32' /></Link>            
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
