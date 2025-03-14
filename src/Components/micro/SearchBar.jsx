@@ -10,6 +10,7 @@ const SearchBar = () => {
   const [showGuestSelector, setShowGuestSelector] = useState(false);
   const [adults, setAdults] = useState(1);
   const [pets, setPets] = useState(0);
+  const [errorMessage, setErrorMessage] = useState("");
   const guestSelectorRef = useRef(null);
 
   const handleClickOutside = (event) => {
@@ -27,6 +28,18 @@ const SearchBar = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
+  const handleSearch = () => {
+    const nights = checkInDate && checkOutDate ? (checkOutDate - checkInDate) / (1000 * 60 * 60 * 24) : 0;
+    if (nights < 2) {
+      setErrorMessage("Minimum stay is 2 nights");
+    } else if (pets > 2) {
+      setErrorMessage("2 pets allowed only");
+    } else {
+      setErrorMessage("");
+      // Execute search logic here
+    }
+  };
 
   return (
     <div className="flex items-center justify-between bg-white p-4 rounded-full shadow-lg">
@@ -86,9 +99,13 @@ const SearchBar = () => {
           )}
         </div>
       </div>
-      <button className="bg-[#FF9874] p-3 rounded-full text-white hover:bg-[#E57A5a]">
+      <button
+        className="bg-[#FF9874] p-3 rounded-full text-white hover:bg-[#E57A5a]"
+        onClick={handleSearch}
+      >
         <FiSearch />
       </button>
+      {errorMessage && <p className="text-red-500 text-sm mt-2">{errorMessage}</p>}
     </div>
   );
 };

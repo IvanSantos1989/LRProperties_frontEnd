@@ -3,7 +3,11 @@ import { Button } from '@/Components/micro/Button';
 import { Link } from 'react-router-dom';
 import PT from '../assets/portugal.png';
 import UK from '../assets/reino-unido.png';
+import ES from '../assets/Spain.png';
+import FR from '../assets/France.png';
+import DE from '../assets/Germany.png';
 import { AuthContext } from '@/contexts/AuthContext';
+import Logo from '../assets/LogoLR.webp.png';
 
 const Header = () => {
     const [language, setLanguage] = useState('EN');
@@ -35,8 +39,10 @@ const Header = () => {
     }, []);
 
     return (
-        <div className='w-full flex items-center justify-between px-10 p-5 shadow-sm bg-white'>
-            <Link to="/"><p alt="logo" className='cursor-pointer text-xl font-bold'>LOGO</p></Link>
+        <div className='w-full flex items-center justify-between px-10 p-5 shadow-sm bg-white relative'>
+            <Link to="/">
+                <img src={Logo} alt="logo" className='cursor-pointer w-32 absolute top-[-20px]' />
+            </Link>
             <div className='flex items-center gap-2'>
                 <div className="relative" ref={dropdownRef}>
                     <Button
@@ -67,7 +73,25 @@ const Header = () => {
                                     className="flex gap-2 px-4 py-2 hover:bg-gray-200 cursor-pointer"
                                     onClick={() => handleLanguageChange('PT')}
                                 >
-                                    Português <img className='w-[18px]' src={PT} alt="PT Flag" />
+                                    Portuguese <img className='w-[18px]' src={PT} alt="PT Flag" />
+                                </li>
+                                <li
+                                    className="flex gap-2 px-4 py-2 hover:bg-gray-200 cursor-pointer"
+                                    onClick={() => handleLanguageChange('ES')}
+                                >
+                                    Spanish <img className='w-[18px]' src={ES} alt="ES Flag" />
+                                </li>
+                                <li
+                                    className="flex gap-2 px-4 py-2 hover:bg-gray-200 cursor-pointer"
+                                    onClick={() => handleLanguageChange('FR')}
+                                >
+                                    French <img className='w-[18px]' src={FR} alt="FR Flag" />
+                                </li>
+                                <li
+                                    className="flex gap-2 px-4 py-2 hover:bg-gray-200 cursor-pointer"
+                                    onClick={() => handleLanguageChange('DE')}
+                                >
+                                    German <img className='w-[18px]' src={DE} alt="DE Flag" />
                                 </li>
                             </ul>
                         </div>

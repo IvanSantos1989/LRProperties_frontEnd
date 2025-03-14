@@ -94,7 +94,7 @@ export const hostelData = [
     {
       id: 1,
       name: 'Cedofeita Exclusive',
-      location: 'Praia do Cabedelo',
+      location: 'Cedofeita',
       price: '100€',
       quartos: "1",
       camas: "2",
@@ -108,13 +108,13 @@ export const hostelData = [
 
       descrição2:`It has: living room, Kitchenette (fully equipped with stove, microwaves, oven, kettle, expresso machine).
       We provide : Towels, bed linen, pillows.`,
-      
-      registro: "35644/AL"
     },
+
+
     {
         id: 2,
         name: 'Cedofeita Paradise',
-        location: 'Praia do Cabedelo',
+        location: 'Cedofeita',
         price: '100€',
         quartos: "1",
         camas: "2",
@@ -140,19 +140,19 @@ export const hostelData = [
         We look forward to hosting you and making your stay unforgettable!`,
        
         descrição2:`It has: living room, Kitchenette (fully equipped with stove, microwaves, oven, kettle, expresso machine).
-        We provide : Towels, bed linen, pillows.`,
-        
-        registro: "35644/AL"
+        We provide : Towels, bed linen, pillows.`, 
       },
+
+
       {
         id: 3,
         name: 'Charming Studio with Balcony',
-        location: 'Praia do Cabedelo',
+        location: 'Rua Mártires da Liberdade',
         price: '100€',
         quartos: "2",
         camas: "2",
-       hóspedes: "2",
-        casa_banho: "2",
+        hóspedes: "2",
+        casa_banho: "1",
         image: img38,
         image2: img25,
         image3: img26,
@@ -173,10 +173,10 @@ export const hostelData = [
         image18: img42,
         image19: img43,
         image20: img44,
-        descrição: "Este maravilhoso apartamento de dois quartos é ideal para visitar o Porto e passar algum tempo na praia. O ambiente tranquilo e a piscina no condomínio tornam o espaço ideal para viajantes individuais, praticantes de surf, casais e famílias com crianças. As 2 varandas são maravilhosas: uma está orientada a sul e é ideal para refeições e lanches pois está equipada com mesa de madeira e cadeiras. A outra está orientada a poente onde pode descontrair a ler um livro no pôr-do-sol.",
-        // Aguardando descrição oficial
-        registro: "35644/AL"
+        descrição: "Cozy central loft  w/balcony - Experience ultimate comfort in this charming and well-equipped space, perfect for making the most of your time in Porto! Enjoy a delightful balcony where you can relax outdoors and soak in the city's vibrant atmosphere. Ideally located in the heart of Porto, on Rua Mártires da Liberdade, you'll be just steps away from lively bars, renowned restaurants, and the city's top attractions.",        
       },
+
+
       {
         id: 4,
         name: 'Clerigos Cozy Balcony',
@@ -220,9 +220,9 @@ export const hostelData = [
         the balcony is the perfect spot to enjoy breakfast, a glass of wine, or simply take in the atmosphere of the city.`,
     
         descrição6: `Self check-in might be available for added convenience and flexibility for guests.`,
-        
-        registro: "35644/AL"
       },
+
+
       {
         id: 5,
         name: 'Clerigos Premium',
@@ -280,13 +280,13 @@ export const hostelData = [
         thanks to well-insulated windows or a location set back from the main streets, reducing noise.`,
        
         descrição7: `Self Check-in or convenient access, making it easy for guests to settle in quickly.`,
-
-        registro: "35644/AL"
       },
+
+
       {
         id: 6,
-        name: 'Small Studio',
-        location: 'Praia do Cabedelo',
+        name: 'Cozy & very central microloft', //small studio
+        location: 'Rua Mártires da Liberdade',
         price: '100€',
         quartos: "1",
         camas: "1",
@@ -299,44 +299,46 @@ export const hostelData = [
         image5: img89,
         image6: img90,
         image7: img92,
-        descrição: "Este maravilhoso apartamento de dois quartos é ideal para visitar o Porto e passar algum tempo na praia. O ambiente tranquilo e a piscina no condomínio tornam o espaço ideal para viajantes individuais, praticantes de surf, casais e famílias com crianças. As 2 varandas são maravilhosas: uma está orientada a sul e é ideal para refeições e lanches pois está equipada com mesa de madeira e cadeiras. A outra está orientada a poente onde pode descontrair a ler um livro no pôr-do-sol.",
-        // Aguardando descrição oficial
-        registro: "35644/AL"
+        descrição: "Before you reserve, make sure you are aware that it is located on a very lively street, with noise sometimes until 2 or 3AM. This microloft captures the charm of this eclectic and historical street while offering a compact, modern living experience. This neighborhood is known for its mix of traditional Portuguese architecture, quirky art spaces, and vibrant local life. A microloft here would be the ideal blend of urban convenience and cultural richness.",
       },
+
+
       {
         id: 7,
-        name: 'Aliados, Portugal', // Aguardando fotos e descrição da casa
-        location: 'Praia do Cabedelo',
+        name: 'Cozy & Central Loft Downtown', // big studio
+        location: 'Rua Mártires da Liberdade',
         price: '100€',
         quartos: "2",
         camas: "2",
         hóspedes: "2",
         casa_banho: "2",
-        descrição: "Este maravilhoso apartamento de dois quartos é ideal para visitar o Porto e passar algum tempo na praia. O ambiente tranquilo e a piscina no condomínio tornam o espaço ideal para viajantes individuais, praticantes de surf, casais e famílias com crianças. As 2 varandas são maravilhosas: uma está orientada a sul e é ideal para refeições e lanches pois está equipada com mesa de madeira e cadeiras. A outra está orientada a poente onde pode descontrair a ler um livro no pôr-do-sol.",
-        registro: "35644/AL"
+        descrição: "Enjoy unbeatable access to the city's vibrant life from this spacious and well-equipped studio, perfectly located in the heart of Porto. Situated on a lively street filled with bars, restaurants, and cultural hotspots, this stylish and comfortable space is ideal for those who want to immerse themselves in the city’s dynamic atmosphere. The studio features a cozy sleeping area, a modern bathroom, a fully equipped kitchenette, and a bright living space where you can relax after a day of exploring. With major attractions, public transport, and the iconic Ribeira district just a short walk away, you'll have everything at your fingertips. Please note that due to the bustling nightlife in the area, noise can be expected until around 3:00 AM. Earplugs are provided for your comfort. Whether you’re here for a short getaway or an extended stay, this studio is the perfect base for experiencing the best of Porto!",
       },
+
+
       {
         id: 8,
-        name: 'Aliados, Portugal', // Aguardando fotos e descrição da casa
-        location: 'Praia do Cabedelo',
+        name: 'Flores St comfy & cozy apartment',
+        location: 'Rua das Flores',
         price: '100€',
         quartos: "2",
         camas: "2",
         hóspedes: "2",
         casa_banho: "2",
-        descrição: "Este maravilhoso apartamento de dois quartos é ideal para visitar o Porto e passar algum tempo na praia. O ambiente tranquilo e a piscina no condomínio tornam o espaço ideal para viajantes individuais, praticantes de surf, casais e famílias com crianças. As 2 varandas são maravilhosas: uma está orientada a sul e é ideal para refeições e lanches pois está equipada com mesa de madeira e cadeiras. A outra está orientada a poente onde pode descontrair a ler um livro no pôr-do-sol.",
-        registro: "35644/AL"
+        descrição: "Discover the charm of Porto by staying in this elegant apartment located on the iconic Rua das Flores, one of the city's most vibrant and historic areas. With a modern and cozy design, this space is perfect for those who want to explore the city on foot while enjoying maximum comfort. What makes this space special? Prime location in the heart of Porto, just steps away from Ribeira, São Bento Station, and major tourist attractions. A stylish and practical sofa bed for extra comfort. Modern and comfortable décor with high-quality finishes. Charming view of the vibrant Rua das Flores. Fully equipped kitchen for convenient meal preparation. Fast Wi-Fi and a dedicated workspace, ideal for those who need to stay connected. Nearby points of interest: São Bento Station - 2 minutes on foot Ribeira and Douro River - 5 minutes on foot Clérigos Tower and Lello Bookstore - 7 minutes on foot Ferreira Borges Market and Palácio da Bolsa - 4 minutes on foot Access and transportation: The apartment is located on a pedestrian-only street, surrounded by shops, cafés, and traditional restaurants. If you are arriving by car, public parking is available nearby. Book now and enjoy an authentic experience in the heart of Porto!",
       },
-      {
-        id: 9,
-        name: 'Aliados, Portugal', // Aguardando fotos e descrição do barco
-        location: 'Praia do Cabedelo',
-        price: '100€',
-        quartos: "2",
-        camas: "2",
-        hóspedes: "2",
-        casa_banho: "2",
-        descrição: "Este maravilhoso apartamento de dois quartos é ideal para visitar o Porto e passar algum tempo na praia. O ambiente tranquilo e a piscina no condomínio tornam o espaço ideal para viajantes individuais, praticantes de surf, casais e famílias com crianças. As 2 varandas são maravilhosas: uma está orientada a sul e é ideal para refeições e lanches pois está equipada com mesa de madeira e cadeiras. A outra está orientada a poente onde pode descontrair a ler um livro no pôr-do-sol.",
-        registro: "35644/AL"
-      },
+
+
+      // Aguardando fotos e descrição do barco
+      // {
+      //   id: 9,
+      //   name: 'Aliados, Portugal', 
+      //   location: 'Praia do Cabedelo',
+      //   price: '100€',
+      //   quartos: "2",
+      //   camas: "2",
+      //   hóspedes: "2",
+      //   casa_banho: "2",
+      //   descrição: "Este maravilhoso apartamento de dois quartos é ideal para visitar o Porto e passar algum tempo na praia. O ambiente tranquilo e a piscina no condomínio tornam o espaço ideal para viajantes individuais, praticantes de surf, casais e famílias com crianças. As 2 varandas são maravilhosas: uma está orientada a sul e é ideal para refeições e lanches pois está equipada com mesa de madeira e cadeiras. A outra está orientada a poente onde pode descontrair a ler um livro no pôr-do-sol.",
+      // },
 ]
