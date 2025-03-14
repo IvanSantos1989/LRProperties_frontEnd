@@ -8,7 +8,11 @@ import FR from '../assets/France.png';
 import DE from '../assets/Germany.png';
 import { AuthContext } from '@/contexts/AuthContext';
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import Logo from '../assets/LogoLR.webp.png';
+=======
+import Logo from '../assets/logo.png';
+>>>>>>> Stashed changes
 =======
 import Logo from '../assets/logo.png';
 >>>>>>> Stashed changes
@@ -52,6 +56,9 @@ const Header = () => {
 =======
         <div className='w-full flex items-center justify-between px-10 p-5 shadow-sm bg-white'>
             <Link to="/"><img src={Logo} className='cursor-pointer w-32' /></Link>            
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             <div className='flex items-center gap-2'>
                 <div className="relative" ref={dropdownRef}>
