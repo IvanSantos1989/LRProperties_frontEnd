@@ -7,7 +7,11 @@ import ES from '../assets/Spain.png';
 import FR from '../assets/France.png';
 import DE from '../assets/Germany.png';
 import { AuthContext } from '@/contexts/AuthContext';
+<<<<<<< Updated upstream
 import Logo from '../assets/LogoLR.webp.png';
+=======
+import Logo from '../assets/logo.png';
+>>>>>>> Stashed changes
 
 const Header = () => {
     const [language, setLanguage] = useState('EN');
@@ -16,6 +20,7 @@ const Header = () => {
     const dropdownRef = useRef(null);
     const profileDropdownRef = useRef(null);
     const { token } = useContext(AuthContext);
+    //const token = "fakeToken";
 
     const handleLanguageChange = (lang) => {
         setLanguage(lang);
@@ -39,10 +44,15 @@ const Header = () => {
     }, []);
 
     return (
+<<<<<<< Updated upstream
         <div className='w-full flex items-center justify-between px-10 p-5 shadow-sm bg-white relative'>
             <Link to="/">
                 <img src={Logo} alt="logo" className='cursor-pointer w-32 absolute top-[-20px]' />
             </Link>
+=======
+        <div className='w-full flex items-center justify-between px-10 p-5 shadow-sm bg-white'>
+            <Link to="/"><img src={Logo} className='cursor-pointer w-32' /></Link>            
+>>>>>>> Stashed changes
             <div className='flex items-center gap-2'>
                 <div className="relative" ref={dropdownRef}>
                     <Button

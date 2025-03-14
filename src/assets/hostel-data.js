@@ -149,9 +149,15 @@ export const hostelData = [
         name: 'Charming Studio with Balcony',
         location: 'Rua Mártires da Liberdade',
         price: '100€',
+<<<<<<< Updated upstream
         quartos: "2",
         camas: "2",
         hóspedes: "2",
+=======
+        quartos: "1",
+        camas: "1",
+       hóspedes: "2",
+>>>>>>> Stashed changes
         casa_banho: "1",
         image: img38,
         image2: img25,
@@ -184,7 +190,7 @@ export const hostelData = [
         price: '100€',
         quartos: "1",
         camas: "2",
-        hóspedes: "2",
+        hóspedes: "3",
         casa_banho: "1",
         image: img45,
         image2: img46,
@@ -230,8 +236,8 @@ export const hostelData = [
         price: '100€',
         quartos: "2",
         camas: "2",
-        hóspedes: "4",
-        casa_banho: "1",
+        hóspedes: "6",
+        casa_banho: "2",
         image: img59,
         image2: img60,
         image3: img61,
@@ -285,8 +291,13 @@ export const hostelData = [
 
       {
         id: 6,
+<<<<<<< Updated upstream
         name: 'Cozy & very central microloft', //small studio
         location: 'Rua Mártires da Liberdade',
+=======
+        name: 'Small Studio - Cozy & very central microloft',
+        location: 'Praia do Cabedelo',
+>>>>>>> Stashed changes
         price: '100€',
         quartos: "1",
         camas: "1",
@@ -305,27 +316,61 @@ export const hostelData = [
 
       {
         id: 7,
+<<<<<<< Updated upstream
         name: 'Cozy & Central Loft Downtown', // big studio
         location: 'Rua Mártires da Liberdade',
+=======
+        name: 'descrição estudio grande - Cozy & Central Loft Downtown', // Aguardando fotos e descrição da casa
+        location: 'Praia do Cabedelo',
+>>>>>>> Stashed changes
         price: '100€',
-        quartos: "2",
-        camas: "2",
+        quartos: "1",
+        camas: "1",
         hóspedes: "2",
+<<<<<<< Updated upstream
         casa_banho: "2",
         descrição: "Enjoy unbeatable access to the city's vibrant life from this spacious and well-equipped studio, perfectly located in the heart of Porto. Situated on a lively street filled with bars, restaurants, and cultural hotspots, this stylish and comfortable space is ideal for those who want to immerse themselves in the city’s dynamic atmosphere. The studio features a cozy sleeping area, a modern bathroom, a fully equipped kitchenette, and a bright living space where you can relax after a day of exploring. With major attractions, public transport, and the iconic Ribeira district just a short walk away, you'll have everything at your fingertips. Please note that due to the bustling nightlife in the area, noise can be expected until around 3:00 AM. Earplugs are provided for your comfort. Whether you’re here for a short getaway or an extended stay, this studio is the perfect base for experiencing the best of Porto!",
+=======
+        casa_banho: "1",
+        descrição: "Este maravilhoso apartamento de dois quartos é ideal para visitar o Porto e passar algum tempo na praia. O ambiente tranquilo e a piscina no condomínio tornam o espaço ideal para viajantes individuais, praticantes de surf, casais e famílias com crianças. As 2 varandas são maravilhosas: uma está orientada a sul e é ideal para refeições e lanches pois está equipada com mesa de madeira e cadeiras. A outra está orientada a poente onde pode descontrair a ler um livro no pôr-do-sol.",
+        registro: "35644/AL"
+>>>>>>> Stashed changes
       },
 
 
       {
         id: 8,
+<<<<<<< Updated upstream
         name: 'Flores St comfy & cozy apartment',
         location: 'Rua das Flores',
         price: '100€',
+=======
+        name: 'Flores St comfy & cozy apartment', // Aguardando fotos e descrição da casa
+        location: 'Praia do Cabedelo',
+        price: '100€',
+        quartos: "1",
+        camas: "1",
+        hóspedes: "4",
+        casa_banho: "1",
+        descrição: "Este maravilhoso apartamento de dois quartos é ideal para visitar o Porto e passar algum tempo na praia. O ambiente tranquilo e a piscina no condomínio tornam o espaço ideal para viajantes individuais, praticantes de surf, casais e famílias com crianças. As 2 varandas são maravilhosas: uma está orientada a sul e é ideal para refeições e lanches pois está equipada com mesa de madeira e cadeiras. A outra está orientada a poente onde pode descontrair a ler um livro no pôr-do-sol.",
+        registro: "35644/AL"
+      },
+      {
+        id: 9,
+        name: 'Aliados, Portugal', // Aguardando fotos e descrição do barco
+        location: 'Praia do Cabedelo',
+        price: '100€',
+>>>>>>> Stashed changes
         quartos: "2",
         camas: "2",
         hóspedes: "2",
         casa_banho: "2",
+<<<<<<< Updated upstream
         descrição: "Discover the charm of Porto by staying in this elegant apartment located on the iconic Rua das Flores, one of the city's most vibrant and historic areas. With a modern and cozy design, this space is perfect for those who want to explore the city on foot while enjoying maximum comfort. What makes this space special? Prime location in the heart of Porto, just steps away from Ribeira, São Bento Station, and major tourist attractions. A stylish and practical sofa bed for extra comfort. Modern and comfortable décor with high-quality finishes. Charming view of the vibrant Rua das Flores. Fully equipped kitchen for convenient meal preparation. Fast Wi-Fi and a dedicated workspace, ideal for those who need to stay connected. Nearby points of interest: São Bento Station - 2 minutes on foot Ribeira and Douro River - 5 minutes on foot Clérigos Tower and Lello Bookstore - 7 minutes on foot Ferreira Borges Market and Palácio da Bolsa - 4 minutes on foot Access and transportation: The apartment is located on a pedestrian-only street, surrounded by shops, cafés, and traditional restaurants. If you are arriving by car, public parking is available nearby. Book now and enjoy an authentic experience in the heart of Porto!",
+=======
+        descrição: "Este maravilhoso apartamento de dois quartos é ideal para visitar o Porto e passar algum tempo na praia. O ambiente tranquilo e a piscina no condomínio tornam o espaço ideal para viajantes individuais, praticantes de surf, casais e famílias com crianças. As 2 varandas são maravilhosas: uma está orientada a sul e é ideal para refeições e lanches pois está equipada com mesa de madeira e cadeiras. A outra está orientada a poente onde pode descontrair a ler um livro no pôr-do-sol.",
+        registro: "35644/AL"
+>>>>>>> Stashed changes
       },
 
 

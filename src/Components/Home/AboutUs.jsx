@@ -8,12 +8,26 @@ const AboutUs = () => {
                 <div className='flex flex-col md:flex-row space-x-0 md:space-x-10 space-y-10 md:space-y-0'>
 
                     <div className="space-y-4">
+                        {/* <div className='w-48 flex flex-col items-center bg-[#F5F5F5] text-center p-5 drop-shadow-2xl rounded-md'>
+                            <MdHomeRepairService size={"1.8rem"} />
+                            <h1 className='text-xl font-bold'>Services</h1>
+                            <p className='text-xs'>
+<<<<<<< Updated upstream
+                            Douro Valley Full-Day Wine & Scenic Tour - 
+                            get to know the beautiful Douro Valley as you join a very private tour throughout this beautiful place.
+=======
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Quisquam, voluptates.
+                            </p>
+                        </div> */}
+
                         <div className='w-48 flex flex-col items-center bg-[#F5F5F5] text-center p-5 drop-shadow-2xl rounded-md'>
                             <MdHomeRepairService size={"1.8rem"} />
                             <h1 className='text-xl font-bold'>Services</h1>
                             <p className='text-xs'>
-                            Douro Valley Full-Day Wine & Scenic Tour - 
-                            get to know the beautiful Douro Valley as you join a very private tour throughout this beautiful place.
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Quisquam, voluptates.
+>>>>>>> Stashed changes
                             </p>
                         </div>
                     </div>
@@ -23,9 +37,23 @@ const AboutUs = () => {
                             <MdHomeRepairService size={"1.8rem"} />
                             <h1 className='text-xl font-bold'>Services</h1>
                             <p className='text-xs'>
+<<<<<<< Updated upstream
                             Private scenic cruise - see the highlights of Porto and Gaia from the river as you savor local products.
+=======
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quisquam, voluptates.
                             </p>
                         </div>
+
+                        {/* <div className='w-48 flex flex-col items-center bg-[#F5F5F5] text-center p-5 drop-shadow-2xl rounded-md'>
+                            <MdHomeRepairService size={"1.8rem"} />
+                            <h1 className='text-xl font-bold'>Amenities</h1>
+                            <p className='text-xs'>
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit. Quisquam, voluptates.
+>>>>>>> Stashed changes
+                            </p>
+                        </div> */}
                     </div>
                 </div>
 
