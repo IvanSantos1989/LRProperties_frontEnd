@@ -151,9 +151,15 @@ export const hostelData = [
         price: '100€',
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         quartos: "2",
         camas: "2",
         hóspedes: "2",
+=======
+        quartos: "1",
+        camas: "1",
+       hóspedes: "2",
+>>>>>>> Stashed changes
 =======
         quartos: "1",
         camas: "1",
@@ -299,9 +305,12 @@ export const hostelData = [
         id: 6,
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         name: 'Cozy & very central microloft', //small studio
         location: 'Rua Mártires da Liberdade',
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
         name: 'Small Studio - Cozy & very central microloft',
@@ -327,9 +336,12 @@ export const hostelData = [
         id: 7,
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         name: 'Cozy & Central Loft Downtown', // big studio
         location: 'Rua Mártires da Liberdade',
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
         name: 'descrição estudio grande - Cozy & Central Loft Downtown', // Aguardando fotos e descrição da casa
@@ -341,9 +353,12 @@ export const hostelData = [
         hóspedes: "2",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         casa_banho: "2",
         descrição: "Enjoy unbeatable access to the city's vibrant life from this spacious and well-equipped studio, perfectly located in the heart of Porto. Situated on a lively street filled with bars, restaurants, and cultural hotspots, this stylish and comfortable space is ideal for those who want to immerse themselves in the city’s dynamic atmosphere. The studio features a cozy sleeping area, a modern bathroom, a fully equipped kitchenette, and a bright living space where you can relax after a day of exploring. With major attractions, public transport, and the iconic Ribeira district just a short walk away, you'll have everything at your fingertips. Please note that due to the bustling nightlife in the area, noise can be expected until around 3:00 AM. Earplugs are provided for your comfort. Whether you’re here for a short getaway or an extended stay, this studio is the perfect base for experiencing the best of Porto!",
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
         casa_banho: "1",
@@ -357,10 +372,13 @@ export const hostelData = [
         id: 8,
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         name: 'Flores St comfy & cozy apartment',
         location: 'Rua das Flores',
         price: '100€',
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
         name: 'Flores St comfy & cozy apartment', // Aguardando fotos e descrição da casa
