@@ -1,15 +1,19 @@
 import { useContext, useState, useEffect } from "react";
 import { AuthContext } from "@/contexts/AuthContext";
-import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import LoadingSpinner from "@/Components/micro/LoadingSpinner";
 
 const EditProfile = () => {
   const { token } = useContext(AuthContext);
+
+  /*
+    errors
+  */
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
 
   const [user, setUser] = useState({
-    name: '', email: '', phone: '', countryCode: '351', newPassword: '', confirmNewPassword: '', currentPassword: ''
+    name: '', email: '', phone: '', country_code: '', password: '', confirmPassword: '', currentPassword: ''
   })
   
   const onChangeUserNewInfo = (event) => {
@@ -29,8 +33,8 @@ const EditProfile = () => {
           }
         });
 
-        const { name, email, phone } = response.data;
-        setUser(() => ({ "name": name, "email": email, "phone": phone }))
+        const { name, email, phone, country_code } = response.data;    
+        setUser(() => ({ "name": name, "email": email, "phone": phone, "country_code": country_code}))
 
       } catch (error) {
         console.error("Error fetching profile data:", error);
@@ -39,45 +43,45 @@ const EditProfile = () => {
 
     fetchProfile();
   }, [token]);
-
-  const handleSubmit = async (e) => {
+  
+  const handleSubmit = async (e) => {    
     e.preventDefault();
+    setError("")
+    setSuccess("")
 
-    if (!name && !email && !phone && !countryCode && !newPassword) {
-      setError("No changes made.");
-      setSuccess("");
-      return;
-    }
-
-    if (newPassword && newPassword !== confirmPassword) {
+    if (user.password && user.password !== user.confirmPassword) {
       setError("Passwords do not match.");
-      setSuccess("");
-      return;
-    }
-
-    setError("");
-    setSuccess("");
-
-    try {
-      await axios.put('http://127.0.0.1:8000/api/profile', { name, email, phone, country_code: countryCode, password: newPassword }, {
-        headers: {
-          Authorization: `Bearer ${token}`
-        }
-      });
-      setSuccess("Changes saved successfully.");
-    } catch (error) {
-      console.error("Error updating profile:", error);
-      setError("Failed to update profile.");
+    } else {
+      console.log(user)
+      try {
+          await axios.put('http://127.0.0.1:8000/api/user/update', user, {
+          headers: {
+            Authorization: `Bearer ${token}`
+          }
+        });
+        setSuccess("Changes saved successfully.");
+      } catch (error) {
+        setError("Failed to update profile.");
+      }
     }
   };
+
+  if (user.name == '') {
+    return (
+        <div style={{height: "69vh"}} className='flex justify-center'>
+            <LoadingSpinner speed="0.3" color="#FFA282" size="90" 
+            title="Setting everything up..." margin="8"/>
+        </div>
+    )  
+  }
 
   return (
     <div className="flex justify-center items-center h-[80vh] bg-white">
       <div className="bg-[#303030] border rounded-[10px] p-8 shadow-xl max-w-md">
         <h1 className="text-3xl text-white font-bold text-center mb-6">Edit Profile</h1>
         <form onSubmit={handleSubmit}>
-          {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
-          {success && <p className="text-green-500 text-sm mb-4">{success}</p>}
+          {error && <p className="text-red-500 text-sm mb-4 text-center">{error}</p>}
+          {success && <p className="text-green-500 text-sm mb-4 text-center">{success}</p>}
           <div className="relative my-7">
             <input
               type="text"
@@ -110,11 +114,11 @@ const EditProfile = () => {
               <span className="text-white text-sm font-semibold">+</span>
               <input
                 type="text"
-                value={user.countryCode}
+                value={user.country_code}
                 onChange={onChangeUserNewInfo}
                 className="block w-[50px] py-2.5 px-2 text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#FFA282] peer"
                 placeholder=" "
-                name="countryCode"
+                name="country_code"
                 required
               />
               <label className="absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-[#FFA282] peer-placeholder-shown:translate-y-0 peer-placeholder-shown:left-3 peer-focus:scale-75 peer-focus:-translate-y-6">
@@ -145,7 +149,7 @@ const EditProfile = () => {
                 className="block w-full py-2.5 px-4 text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#FFA282] peer"
                 placeholder=" "
                 autoComplete="new-password"
-                name="newPassword"
+                name="password"
                 required
               />
               <label className="absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-[#FFA282] peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
@@ -158,7 +162,7 @@ const EditProfile = () => {
                 onChange={onChangeUserNewInfo}
                 className="block w-full py-2.5 px-4 text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#FFA282] peer"
                 placeholder=" "
-                name="confirmNewPassword"
+                name="confirmPassword"
                 required
               />
               <label className="absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-[#FFA282] peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
