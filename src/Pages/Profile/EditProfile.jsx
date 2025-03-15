@@ -66,7 +66,6 @@ const EditProfile = () => {
     }
   };
 
-  
   if (user.name == '') {
     return (
         <div style={{height: "69vh"}} className='flex justify-center'>
