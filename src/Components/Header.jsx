@@ -1,11 +1,12 @@
 import { useState, useEffect, useRef, useContext } from 'react';
 import { Button } from '@/Components/micro/Button';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import PT from '../assets/portugal.png';
 import UK from '../assets/reino-unido.png';
 import { AuthContext } from '@/contexts/AuthContext';
 
 const Header = () => {
+    const navigate = useNavigate();
     const [language, setLanguage] = useState('EN');
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const [profileDropdownOpen, setProfileDropdownOpen] = useState(false);
@@ -99,15 +100,21 @@ const Header = () => {
                                         <ul>
                                             <li
                                                 className="flex gap-2 px-4 py-2 hover:bg-gray-200 cursor-pointer"
-                                                onClick={() => setProfileDropdownOpen(false)}
+                                                onClick={() => {
+                                                    setProfileDropdownOpen(false);
+                                                    navigate("/profile/edit");
+                                                }}
                                             >
-                                                <Link to="/profile/edit">Manage Profile</Link>
+                                                Manage Profile
                                             </li>
                                             <li
                                                 className="flex gap-2 px-4 py-2 hover:bg-gray-200 cursor-pointer"
-                                                onClick={() => setProfileDropdownOpen(false)}
+                                                onClick={() => {
+                                                    setProfileDropdownOpen(false);
+                                                    navigate("/logout");
+                                                }}
                                             >
-                                                <Link to="/">Logout</Link>
+                                                Logout
                                             </li>
                                         </ul>
                                     </div>
