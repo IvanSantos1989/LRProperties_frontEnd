@@ -7,23 +7,7 @@ import ES from '../assets/Spain.png';
 import FR from '../assets/France.png';
 import DE from '../assets/Germany.png';
 import { AuthContext } from '@/contexts/AuthContext';
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 import Logo from '../assets/LogoLR.webp.png';
-=======
-import Logo from '../assets/logo.png';
->>>>>>> Stashed changes
-=======
-import Logo from '../assets/logo.png';
->>>>>>> Stashed changes
-=======
-import Logo from '../assets/logo.png';
->>>>>>> Stashed changes
-=======
-import Logo from '../assets/logo.png';
->>>>>>> Stashed changes
 
 const Header = () => {
     const [language, setLanguage] = useState('EN');
@@ -56,24 +40,11 @@ const Header = () => {
     }, []);
 
     return (
-<<<<<<< Updated upstream
         <div className='w-full flex items-center justify-between px-10 p-5 shadow-sm bg-white relative'>
             <Link to="/">
                 <img src={Logo} alt="logo" className='cursor-pointer w-32 absolute top-[-20px]' />
             </Link>
-=======
-        <div className='w-full flex items-center justify-between px-10 p-5 shadow-sm bg-white'>
             <Link to="/"><img src={Logo} className='cursor-pointer w-32' /></Link>            
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
             <div className='flex items-center gap-2'>
                 <div className="relative" ref={dropdownRef}>
                     <Button
