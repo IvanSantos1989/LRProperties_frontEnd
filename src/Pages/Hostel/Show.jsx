@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { FaWifi } from "react-icons/fa";
-import { IoMdTv } from "react-icons/io";
+import { IoMdTv, IoMdKey } from "react-icons/io";
 import { TbToolsKitchen2, TbAirConditioning } from "react-icons/tb";
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
@@ -20,6 +20,7 @@ const Hostel = () => {
     const [adults, setAdults] = useState(1);
     const [totalPrice, setTotalPrice] = useState(0);
     const [showCarousel, setShowCarousel] = useState(false);
+    const [errorMessage, setErrorMessage] = useState("");
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -31,12 +32,15 @@ const Hostel = () => {
     useEffect(() => {
         if (hostel) {
             const basePrice = hostel.price_per_night;
-            const guestPrice = basePrice * adults;
-            const petPrice = pets * 5;
-            const nights = endDate && startDate ? (endDate - startDate) / (1000 * 60 * 60 * 24) : 0;
-            setTotalPrice((guestPrice + petPrice) * nights);
+            const nights = startDate && endDate ? (endDate - startDate) / (1000 * 60 * 60 * 24) : 0;
+            if (nights < 2 && nights > 0) {
+                setErrorMessage("Minimum stay is 2 nights");
+            } else {
+                setErrorMessage("");
+                setTotalPrice((basePrice * nights) + (pets * 5));
+            }
         }
-    }, [adults, pets, startDate, endDate, hostel]);
+    }, [startDate, endDate, pets, hostel]);
 
     const handleOpenCarousel = () => {
         if (hostel.images.length > 0) {
@@ -136,6 +140,7 @@ const Hostel = () => {
                             className="w-full border p-2 rounded"
                             dateFormat={"dd/MM/yyyy"}
                         />
+                        {errorMessage && <p className="text-red-500 text-sm mt-2">{errorMessage}</p>}
                     </div>
 
                     <div className="border rounded p-4 mb-4">
@@ -144,7 +149,7 @@ const Hostel = () => {
                             <div className="flex items-center">
                                 <button onClick={() => setAdults(adults > 1 ? adults - 1 : 1)}>-</button>
                                 <span className="mx-2">{adults}</span>
-                                <button onClick={() => setAdults(adults + 1)}>+</button>
+                                <button onClick={() => setAdults(adults < hostel.amenities.guests ? adults + 1 : adults)}>+</button>
                             </div>
                         </div>
                     </div>
@@ -155,9 +160,10 @@ const Hostel = () => {
                             <div className="flex items-center">
                                 <button onClick={() => setPets(pets > 0 ? pets - 1 : 0)}>-</button>
                                 <span className="mx-2">{pets}</span>
-                                <button onClick={() => setPets(pets + 1)}>+</button>
+                                <button onClick={() => setPets(pets < 2 ? pets + 1 : 2)}>+</button>
                             </div>
                         </div>
+                        {pets >= 2 && <p className="text-red-500 text-sm mt-2">2 pets allowed only</p>}
                     </div>
 
                     <p className="font-bold text-2xl mb-4">Total: {totalPrice}€</p>
@@ -187,7 +193,7 @@ const Hostel = () => {
                         <TbToolsKitchen2 /> Kitchen
                     </span>
                     <span className="flex items-center gap-2">
-                        <TbAirConditioning /> Air conditioning or heating
+                        <IoMdKey /> Self Check-in
                     </span>
                 </div>
             </div>
