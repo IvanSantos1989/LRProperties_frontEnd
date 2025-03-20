@@ -108,6 +108,7 @@ export const hostelData = [
 
     descrição2: `It has: living room, Kitchenette (fully equipped with stove, microwaves, oven, kettle, expresso machine).
       We provide : Towels, bed linen, pillows.`,
+
   },
 
   {
@@ -138,8 +139,7 @@ export const hostelData = [
         After a day of sightseeing, you can unwind in peace, thanks to the serene atmosphere of the apartment. 
         We look forward to hosting you and making your stay unforgettable!`,
 
-    descrição2: `It has: living room, Kitchenette (fully equipped with stove, microwaves, oven, kettle, expresso machine).
-        We provide : Towels, bed linen, pillows.`,
+    descrição2: `It has: living room, Kitchenette (fully equipped with stove, microwaves, oven, kettle, expresso machine). We provide : Towels, bed linen, pillows.`,
   },
 
   {
