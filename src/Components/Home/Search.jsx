@@ -8,7 +8,7 @@ const Search = () => {
       <img
         src={searchImg}
         alt=""
-        className="w-full h-full object-cover rounded-xl"
+        className="w-full h-full object-cover"
       />
       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2">
         <SearchBar />

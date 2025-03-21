@@ -12,7 +12,7 @@ const SearchBar = () => {
   const [adults, setAdults] = useState(1);
   const [pets, setPets] = useState(0);
 
-  const [errorMessage, setErrorMessage] = useState("The minimum stay is 2 nights. Please check your fields and try again!");
+  const [errorMessage, setErrorMessage] = useState("");
   const [erroModalVisible, setErrorModalVisible] = useState(false);
 
   const guestSelectorRef = useRef(null);
@@ -36,15 +36,11 @@ const SearchBar = () => {
   const handleSearch = () => {
     const nights =
       checkInDate && checkOutDate
-        ? (checkOutDate - checkInDate) / (1000 * 60 * 60 * 24)
-        : 0;
+        ? (checkOutDate - checkInDate) / (1000 * 60 * 60 * 24): 0;
     if (nights < 2) {
       setErrorMessage("The minimum stay is 2 nights. Please check your fields and try again!");
     } else if (pets > 2) {
       setErrorMessage("THe minimum pets allowed are 2. Please check your fields and try again!");
-    } else {
-      setErrorMessage("");
-      // Execute search logic here
     }
 
     setErrorModalVisible(true)
