@@ -1,7 +1,7 @@
 import { useContext, useState, useEffect } from "react";
 import { AuthContext } from "@/contexts/AuthContext";
 import axios from "axios";
-import LoadingSpinner from "@/Components/micro/LoadingSpinner";
+import LoadingSpinner from "@/Components/micro/Spinners/LoadingSpinner";
 
 const EditProfile = () => {
   const { token } = useContext(AuthContext);
