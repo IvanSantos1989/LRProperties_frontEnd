@@ -41,7 +41,7 @@ const SearchBar = () => {
     if (nights < 2) {
       setErrorMessage("The minimum stay is 2 nights. Please check your fields and try again!");
     } else if (pets > 2) {
-      setErrorMessage("2 pets allowed only.");
+      setErrorMessage("THe minimum pets allowed are 2. Please check your fields and try again!");
     } else {
       setErrorMessage("");
       // Execute search logic here
