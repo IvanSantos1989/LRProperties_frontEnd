@@ -3,37 +3,43 @@ import { Link, useNavigate } from "react-router-dom";
 import { BiUser } from "react-icons/bi";
 import { AiOutlineUnlock } from "react-icons/ai";
 import { AuthContext } from "@/contexts/AuthContext";
+import ErrorModal from "@/Components/micro/Modals/Error/ErrorModal";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  
+  const [errorMessage, setErrorMessage] = useState("");
+  const [erroModalVisible, setErrorModalVisible] = useState(false);
 
   const { signIn } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!email || !password) {
-      setError("Please fill in all fields");
-      return;
-    }
-
-    setError("");
 
     const data = {email, password}
 
-    await signIn(data)
-    navigate("/")
+    try {
 
+      await signIn(data)
+          .then(() => navigate("/"))
+
+    } catch (error) {
+      const errors = error.response.data
+
+      // Present errors 1 by 1
+      setErrorMessage(Object.values(errors)[0][0])
+      setErrorModalVisible(true)
+    }
   };
 
   return (
     <div className="flex justify-center items-center h-screen bg-white">
+      <ErrorModal errorMessage={errorMessage} visible={erroModalVisible} setVisible={setErrorModalVisible}/>
       <div className="bg-[#303030] border border-gray-300 rounded-lg p-8 shadow-xl w-full max-w-md">
         <h1 className="text-3xl text-white font-bold text-center mb-6">Login</h1>
         <form onSubmit={handleSubmit}>
-          {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
           <div className="relative my-4">
             <input
               type="email"
@@ -41,6 +47,7 @@ const Login = () => {
               onChange={(e) => setEmail(e.target.value)}
               className="block w-full py-2.5 px-4 text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#FFA282] peer"
               placeholder=" "
+              required
             />
             <label className="absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-[#FFA282] peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
               Email
@@ -54,6 +61,7 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)}
               className="block w-full py-2.5 px-4 text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#FFA282] peer"
               placeholder=" "
+              required
             />
             <label className="absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-[#FFA282] peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
               Password

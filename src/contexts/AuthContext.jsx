@@ -29,20 +29,13 @@ export function AuthContextProvider({ children }) {
   }
 
   async function signIn(props) {
-    try {
-
       const { email, password } = props;
-      const data = { email, password };
 
-      const res = await axios.post('http://127.0.0.1:8000/api/login', data);
+      const res = await axios.post('http://127.0.0.1:8000/api/login', { email, password });
       const token = res.data.token;
 
       setToken(token);
       localStorage.setItem("token", token)
-
-    } catch (error) {
-      console.error("Error during sign up:", error);
-    }
   }
 
   function logout() {
