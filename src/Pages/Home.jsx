@@ -3,7 +3,6 @@ import NewestDeals from '@/Components/Home/NewestDeals'
 import Search from '@/Components/Home/Search'
 import { Button } from '@/Components/micro/Button'
 
-
 const Home = () => {
     return (
         <div>

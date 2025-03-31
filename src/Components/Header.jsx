@@ -47,7 +47,7 @@ const Header = () => {
         <img
           src={Logo}
           alt="logo"
-          className="cursor-pointer w-32 absolute top-[-20px]"
+          className="cursor-pointer w-32 absolute top-10 left-10 z-10"
         />
       </Link>
       <div className="flex items-center gap-2">

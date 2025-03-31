@@ -14,6 +14,7 @@ import Dashboard from "./Pages/Admin/Dashboard"
 import Properties from "./Pages/Admin/Properties"
 import Users from "./Pages/Admin/Users"
 import Reservations from "./Pages/Admin/Reservations"
+import Reviews from "./Components/reviews";
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
             <Route path="/admin/dashboard/users" element={<Users />} />
             <Route path="/admin/dashboard/reservations" element={<Reservations />} />
           </Routes>
+          <Reviews />
         <Footer />
       </AuthContextProvider>     
     </div>

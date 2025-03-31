@@ -16,7 +16,11 @@ function HostelList() {
 
     return (
         hostels.length > 0 ? (
+<<<<<<< Updated upstream
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
+=======
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 mt-10">
+>>>>>>> Stashed changes
                 {hostels.map(hostel => (
                     <HostelCard key={hostel.id} hostel={hostel} />
                 ))}
