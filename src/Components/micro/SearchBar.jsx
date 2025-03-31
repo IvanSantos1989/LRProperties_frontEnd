@@ -11,8 +11,11 @@ const SearchBar = () => {
   const [adults, setAdults] = useState(1);
   const [pets, setPets] = useState(0);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   const [errorMessage, setErrorMessage] = useState("");
 =======
+=======
+>>>>>>> Stashed changes
   const [filterByGuests, setFilterByGuests] = useState(false);
 
   const [errorMessage, setErrorMessage] = useState("");
@@ -38,6 +41,7 @@ const SearchBar = () => {
   }, []);
 
   const handleSearch = () => {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     const nights = checkInDate && checkOutDate ? (checkOutDate - checkInDate) / (1000 * 60 * 60 * 24) : 0;
     if (nights < 2) {
@@ -116,6 +120,8 @@ const SearchBar = () => {
       </button>
       {errorMessage && <p className="text-red-500 text-sm mt-2">{errorMessage}</p>}
 =======
+=======
+>>>>>>> Stashed changes
     if (!checkInDate || !checkOutDate) {
       setErrorMessage("Please select both check-in and check-out dates.");
       setErrorModalVisible(true);
@@ -227,6 +233,9 @@ const SearchBar = () => {
           <FiSearch />
         </button>
       </div>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     </div>
   );
