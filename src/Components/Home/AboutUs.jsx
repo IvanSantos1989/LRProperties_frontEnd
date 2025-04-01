@@ -9,7 +9,7 @@ const AboutUs = () => {
           <div className="space-y-4 ">
             <div className="w-48 flex flex-col items-center bg-[#F5F5F5] text-center p-5 drop-shadow-2xl rounded-md">
               <MdHomeRepairService size={"1.8rem"} />
-              <h1 className="text-xl font-bold">Services</h1>
+              <h1 className="text-xl font-bold">Service</h1>
               <p className="text-xs">
                 Douro Valley Full-Day Wine & Scenic Tour - get to know the
                 beautiful Douro Valley as you join a very private tour
@@ -21,7 +21,7 @@ const AboutUs = () => {
           <div className="space-y-4">
             <div className="w-48 flex flex-col items-center bg-[#F5F5F5] text-center p-5 drop-shadow-2xl rounded-md">
               <MdHomeRepairService size={"1.8rem"} />
-              <h1 className="text-xl font-bold">Services</h1>
+              <h1 className="text-xl font-bold">Service</h1>
               <p className="text-xs">
                 Private scenic cruise - see the highlights of Porto and Gaia
                 from the river as you savor local products.

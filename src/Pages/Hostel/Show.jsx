@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { FaWifi } from "react-icons/fa";
 import { IoMdTv, IoMdKey } from "react-icons/io";
-import { TbToolsKitchen2, TbAirConditioning } from "react-icons/tb";
+import { TbToolsKitchen2 } from "react-icons/tb";
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { Carousel } from 'react-responsive-carousel';
@@ -25,19 +25,23 @@ const Hostel = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
         (async () => {
-            setHostel(await fetchHostelData(hostelId))
+            setHostel(await fetchHostelData(hostelId));
         })();
-    }, []);
+    }, [hostelId]);
 
     useEffect(() => {
         if (hostel) {
             const basePrice = hostel.price_per_night;
             const nights = startDate && endDate ? (endDate - startDate) / (1000 * 60 * 60 * 24) : 0;
-            if (nights < 2 && nights > 0) {
-                setErrorMessage("Minimum stay is 2 nights");
-            } else {
+
+            if (nights > 0 && nights < 2) {
+                setErrorMessage("Minimum stay is 2 nights.");
+                setTotalPrice(0);
+            } else if (nights >= 2) {
                 setErrorMessage("");
                 setTotalPrice((basePrice * nights) + (pets * 5));
+            } else {
+                setTotalPrice(0);
             }
         }
     }, [startDate, endDate, pets, hostel]);
@@ -80,13 +84,12 @@ const Hostel = () => {
         return (
             <div style={{height: "69vh"}} className='flex justify-center'>
                 <LoadingSpinner speed="0.3" color="#FFA282" size="90" 
-                title="Loading your hostel..." margin="8"/>
+                title="Loading your accommodation..." margin="8"/>
             </div>
         )  
     }
     
     return (
-        
         hostel && (
         <div className="max-w-6xl mx-auto px-4 py-9">
             <div className="grid grid-cols-3 gap-4">
@@ -128,6 +131,7 @@ const Hostel = () => {
                             placeholderText="Check-in"
                             className="w-full border p-2 rounded mb-2"
                             dateFormat={"dd/MM/yyyy"}
+                            minDate={new Date()} // desabilita datas passadas
                         />
                         <DatePicker
                             selected={endDate}
@@ -135,10 +139,11 @@ const Hostel = () => {
                             selectsEnd
                             startDate={startDate}
                             endDate={endDate}
-                            minDate={startDate}
+                            minDate={startDate} // desabilita datas antes do check-in
                             placeholderText="Check-out"
                             className="w-full border p-2 rounded"
                             dateFormat={"dd/MM/yyyy"}
+                            disabled={!startDate} // desabilita o campo até que o check-in seja selecionado
                         />
                         {errorMessage && <p className="text-red-500 text-sm mt-2">{errorMessage}</p>}
                     </div>
@@ -176,9 +181,6 @@ const Hostel = () => {
             <div className="mt-8 border-b-2 py-4">
                 <h2 className="text-xl font-bold mb-4">Description</h2>
                 <p style={{whiteSpace: 'pre-wrap'}}>{hostel.description}</p>
-                <p className="mt-4">
-                    Nº Local Accommodation Registration: {hostel.accommodation_reg_number}
-                </p>
             </div>
             <div className="mt-8 border-b-2 py-6 flex flex-col gap-5">
                 <h2 className="text-xl font-bold mb-4">Main Amenities</h2>
