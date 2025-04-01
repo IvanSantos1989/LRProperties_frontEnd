@@ -1,20 +1,29 @@
-import {Navigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import {useContext, useEffect} from "react";
 import {AuthContext} from "../../contexts/AuthContext";
-import axios from "axios";
 import { jwtDecode } from "jwt-decode";
 
-export const AuthMiddleware = (props) =>  {
+export const AuthMiddleware = ({children}) =>  {
     
-    const {token} = useContext(AuthContext)
+    const {token, logout} = useContext(AuthContext)
+    const navigate = useNavigate();
 
-    // check if token expired
     useEffect(() => {
-        const decodedToken = jwtDecode(token)
-        console.log(token);
-        
-      }, []);
+        try{
+          const tokenExpDateInSec = jwtDecode(token).exp // token expiration date
+          const currentTimeInSeconds = new Date().getTime() / 1000;  // since Jan 1st 1970
 
+          // check if token expired
+          if(!token || tokenExpDateInSec < currentTimeInSeconds) {  // token already expired
+            logout() // logout user
+            navigate("/login")
+          }
 
-    return token ? props.element : <Navigate to="/login" />;
+        } catch (err){
+          logout()
+          navigate("/login");
+        }
+    }, [token])
+
+    return <>{children}</>;
 }

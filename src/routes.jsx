@@ -12,6 +12,7 @@ import ForgotPassword from "./Pages/Password/ForgotPassword";
 import ResetPassword from "./Pages/Password/ResetPassword";
 import EditProfile from "./Pages/Profile/EditProfile";
 import Page from "./Components/Page";
+import { AuthMiddleware } from "./Components/Middleware/AuthMiddleware";
 
 const router = createBrowserRouter([
     {
@@ -28,7 +29,10 @@ const router = createBrowserRouter([
     },
     {
         path: "/logout",
-        element: <Page element={<Logout />}/>
+        element: 
+            <AuthMiddleware>
+                <Page element={<Logout />}/>
+            </AuthMiddleware>
     },
     {
         path: "/hostel/:hostelId",
@@ -36,18 +40,27 @@ const router = createBrowserRouter([
     },
     {
         path: "/forgot-password",
-        element: <Page element={<ForgotPassword />} />
+        element: 
+            <AuthMiddleware>
+                <Page element={<ForgotPassword />} />
+            </AuthMiddleware>
     },
     {
         path: "reset-password",
-        element: <Page element={<ResetPassword />} />
+        element: 
+            <AuthMiddleware>
+                <Page element={<ResetPassword />} />
+            </AuthMiddleware>
     },
     {
         path: "/profile",
         children: [
             {
                 path: "edit",
-                element: <Page element={<EditProfile />} />
+                element: 
+                    <AuthMiddleware>
+                        <Page element={<EditProfile />} />
+                    </AuthMiddleware>
             }
         ]
     },
