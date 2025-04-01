@@ -1,3 +1,16 @@
+// cedofeita exclusive
+import img1 from "./Cedofeita-Exclusive/CEDOFEITA362APARTAMENTO1-1.jpg";
+import img2 from "./Cedofeita-Exclusive/CEDOFEITA362APARTAMENTO1-2.jpg";
+import img3 from "./Cedofeita-Exclusive/CEDOFEITA362APARTAMENTO1-3.jpg";
+import img4 from "./Cedofeita-Exclusive/CEDOFEITA362APARTAMENTO1-4.jpg";
+import img5 from "./Cedofeita-Exclusive/CEDOFEITA362APARTAMENTO1-5.jpg";
+import img6 from "./Cedofeita-Exclusive/CEDOFEITA362APARTAMENTO1-6.jpg";
+import img7 from "./Cedofeita-Exclusive/CEDOFEITA362APARTAMENTO1-7.jpg";
+import img8 from "./Cedofeita-Exclusive/CEDOFEITA362APARTAMENTO1-8.jpg";
+import img9 from "./Cedofeita-Exclusive/CEDOFEITA362APARTAMENTO1-9.jpg";
+import img10 from "./Cedofeita-Exclusive/CEDOFEITA362APARTAMENTO1-10.jpg";
+import img11 from "./Cedofeita-Exclusive/CEDOFEITA362APARTAMENTO1-11.jpg";
+
 // cedofeita paradise
 import img12 from "./Cedofeita-Paradise/Cedofeita362Apartamento2-1.jpg";
 import img13 from "./Cedofeita-Paradise/Cedofeita362Apartamento2-2.jpg";
@@ -89,6 +102,71 @@ import img89 from "./Small-Studio/smallstudio5.jpg";
 import img90 from "./Small-Studio/smallstudio6.jpg";
 import img92 from "./Small-Studio/smallstudio8.jpeg";
 
+// big studio
+import img93 from "./Big-Studio/bigstudio1.avif";
+import img94 from "./Big-Studio/bigstudio2.avif";
+import img95 from "./Big-Studio/bigstudio3.avif";
+import img96 from "./Big-Studio/bigstudio4.avif";
+import img97 from "./Big-Studio/bigstudio5.avif";
+import img98 from "./Big-Studio/bigstudio6.avif";
+import img99 from "./Big-Studio/bigstudio7.avif";
+import img100 from "./Big-Studio/bigstudio8.avif";
+import img101 from "./Big-Studio/bigstudio9.avif";
+import img102 from "./Big-Studio/bigstudio10.jpg";
+import img103 from "./Big-Studio/bigstudio11.jpg";
+import img104 from "./Big-Studio/bigstudio12.jpg";
+
+// flores st comfy & cozy apartment
+import img105 from "./rua-das-flores/t1flores1.jpg";
+import img106 from "./rua-das-flores/t1flores2.jpg";
+import img107 from "./rua-das-flores/t1flores3.jpg";
+import img108 from "./rua-das-flores/t1flores4.jpg";
+import img109 from "./rua-das-flores/t1flores5.jpg";
+import img110 from "./rua-das-flores/t1flores6.jpg";
+import img111 from "./rua-das-flores/t1flores7.jpg";
+import img112 from "./rua-das-flores/t1flores8.jpg";
+import img113 from "./rua-das-flores/t1flores9.jpg";
+import img114 from "./rua-das-flores/t1flores10.jpg";
+import img115 from "./rua-das-flores/t1flores11.jpg";
+import img116 from "./rua-das-flores/t1flores12.jpg";
+import img117 from "./rua-das-flores/t1flores13.jpg";
+import img118 from "./rua-das-flores/t1flores14.jpg";
+import img119 from "./rua-das-flores/t1flores15.jpg";
+import img120 from "./rua-das-flores/t1flores16.jpg";
+import img121 from "./rua-das-flores/t1flores17.jpg";
+import img122 from "./rua-das-flores/t1flores18.jpg";
+import img123 from "./rua-das-flores/t1flores19.jpg";
+import img124 from "./rua-das-flores/t1flores20.jpg";
+import img125 from "./rua-das-flores/t1flores21.jpg";
+import img126 from "./rua-das-flores/t1flores22.jpg";
+import img127 from "./rua-das-flores/t1flores23.jpg";
+import img128 from "./rua-das-flores/t1flores24.jpg";
+import img129 from "./rua-das-flores/t1flores25.jpg";
+import img130 from "./rua-das-flores/t1flores26.jpg";
+import img131 from "./rua-das-flores/t1flores27.jpg";
+import img132 from "./rua-das-flores/t1flores28.jpg";
+import img133 from "./rua-das-flores/t1flores29.jpg";
+import img134 from "./rua-das-flores/t1flores30.jpg";
+import img135 from "./rua-das-flores/t1flores31.jpg";
+import img136 from "./rua-das-flores/t1flores32.jpg";
+import img137 from "./rua-das-flores/t1flores33.jpg";
+import img138 from "./rua-das-flores/t1flores34.jpg";
+import img139 from "./rua-das-flores/t1flores35.jpg";
+import img140 from "./rua-das-flores/t1flores36.jpg";
+import img141 from "./rua-das-flores/t1flores37.jpg";
+import img142 from "./rua-das-flores/t1flores38.jpg";
+import img143 from "./rua-das-flores/t1flores39.jpg";
+import img144 from "./rua-das-flores/t1flores40.jpg";
+import img145 from "./rua-das-flores/t1flores41.jpg";
+import img146 from "./rua-das-flores/t1flores42.jpg";
+import img147 from "./rua-das-flores/t1flores43.jpg";
+import img148 from "./rua-das-flores/t1flores44.jpg";
+import img149 from "./rua-das-flores/t1flores45.jpg";
+import img150 from "./rua-das-flores/t1flores46.jpg";
+import img151 from "./rua-das-flores/t1flores47.jpg";
+import img152 from "./rua-das-flores/t1flores48.jpg";
+import img153 from "./rua-das-flores/t1flores49.jpg";
+
 export const hostelData = [
   // informações dos alojamentos
   {
@@ -97,16 +175,27 @@ export const hostelData = [
     location: "Cedofeita",
     price: "100€",
     quartos: "1",
-    camas: "2",
+    camas: "1",
     hóspedes: "4",
     casa_banho: "1",
+    image: img1,
+    image2: img2,
+    image3: img3,
+    image4: img4,
+    image5: img5,
+    image6: img6,
+    image7: img7,
+    image8: img8,
+    image9: img9,
+    image10: img10,
+    image11: img11,
     descrição: `Welcome to our cozy and quiet retreat in the heart of Porto! 
       Located on Rua de Cedofeita, one of the city's most vibrant and historic streets, our apartment offers a perfect blend of comfort and tranquility. 
       With space for up to 4 guests, this charming spot is ideal for families, couples, or friends looking to explore the city's culture, shops, cafes, all within walking distance. 
       After a day of sightseeing, you can unwind in peace, thanks to the serene atmosphere of the apartment. 
       We look forward to hosting you and making your stay unforgettable!`,
 
-    descrição2: `It has: living room, Kitchenette (fully equipped with stove, microwaves, oven, kettle, expresso machine).
+    descrição2: `It has: living room, sofa bed, Kitchenette (fully equipped with stove, microwaves, oven, kettle, expresso machine).
       We provide : Towels, bed linen, pillows.`,
 
   },
@@ -117,7 +206,7 @@ export const hostelData = [
     location: "Cedofeita",
     price: "100€",
     quartos: "1",
-    camas: "2",
+    camas: "1",
     hóspedes: "4",
     casa_banho: "1",
     image: img12,
@@ -139,7 +228,7 @@ export const hostelData = [
         After a day of sightseeing, you can unwind in peace, thanks to the serene atmosphere of the apartment. 
         We look forward to hosting you and making your stay unforgettable!`,
 
-    descrição2: `It has: living room, Kitchenette (fully equipped with stove, microwaves, oven, kettle, expresso machine). We provide : Towels, bed linen, pillows.`,
+    descrição2: `It has: living room, sofa bed, Kitchenette (fully equipped with stove, microwaves, oven, kettle, expresso machine). We provide : Towels, bed linen, pillows.`,
   },
 
   {
@@ -227,7 +316,7 @@ export const hostelData = [
     price: "100€",
     quartos: "2",
     camas: "2",
-    hóspedes: "6",
+    hóspedes: "7",
     casa_banho: "2",
     image: img59,
     image2: img60,
@@ -265,7 +354,7 @@ export const hostelData = [
     descrição2: `Interior & Space - Two Bedrooms: Generously sized bedrooms, each offering ample natural light and thoughtfully designed for comfort. 
         Each bedroom is likely furnished with queen or double beds, high-quality linens, and possibly closets or storage for a long-term stay.`,
 
-    descrição3: `Living Area: The apartment boasts a spacious living room with comfortable seating, perfect for unwinding after a day of exploring. 
+    descrição3: `Living Area: The apartment boasts a spacious living room with comfortable seating, two sofa beds, perfect for unwinding after a day of exploring. 
         Modern décor with warm tones creates a relaxing ambiance, ideal for families or small groups.`,
 
     descrição4: `Kitchen: Fully equipped kitchen with modern appliances (e.g., stove, fridge, microwave, dishwasher), offering everything needed for preparing meals. 
@@ -307,23 +396,105 @@ export const hostelData = [
     quartos: "1",
     camas: "1",
     hóspedes: "2",
-    casa_banho: "2",
+    casa_banho: "1",
+    image: img93,
+    image2: img94,
+    image3: img95,
+    image4: img96,
+    image5: img97,
+    image6: img98,
+    image7: img99,
+    image8: img100,
+    image9: img101,
+    image10: img102,
+    image11: img103,
+    image12: img104,
     descrição:
       "Enjoy unbeatable access to the city's vibrant life from this spacious and well-equipped studio, perfectly located in the heart of Porto. Situated on a lively street filled with bars, restaurants, and cultural hotspots, this stylish and comfortable space is ideal for those who want to immerse themselves in the city’s dynamic atmosphere. The studio features a cozy sleeping area, a modern bathroom, a fully equipped kitchenette, and a bright living space where you can relax after a day of exploring. With major attractions, public transport, and the iconic Ribeira district just a short walk away, you'll have everything at your fingertips. Please note that due to the bustling nightlife in the area, noise can be expected until around 3:00 AM. Earplugs are provided for your comfort. Whether you’re here for a short getaway or an extended stay, this studio is the perfect base for experiencing the best of Porto!",
   },
 
   {
     id: 8,
-    name: "Flores St comfy & cozy apartment",
+    name: "Flores St comfy & cozy apartment", // rua das flores
     location: "Rua das Flores",
     price: "100€",
     quartos: "1",
     camas: "1",
     hóspedes: "4",
     casa_banho: "1",
+    image: img105,
+    image2: img106,
+    image3: img107,
+    image4: img108,
+    image5: img109,
+    image6: img110,
+    image7: img111,
+    image8: img112,
+    image9: img113,
+    image10: img114,
+    image11: img115,
+    image12: img116,
+    image13: img117,
+    image14: img118,
+    image15: img119,
+    image16: img120,
+    image17: img121,
+    image18: img122,
+    image19: img123,
+    image20: img124,
+    image21: img125,
+    image22: img126,
+    image23: img127,
+    image24: img128,
+    image25: img129,
+    image26: img130,
+    image27: img131,
+    image28: img132,
+    image29: img133,
+    image30: img134,
+    image31: img135,
+    image32: img136,
+    image33: img137,
+    image34: img138,
+    image35: img139,
+    image36: img140,
+    image37: img141,
+    image38: img142,
+    image39: img143,
+    image40: img144,
+    image41: img145,
+    image42: img146,
+    image43: img147,
+    image44: img148,
+    image45: img149,
+    image46: img150,
+    image47: img151,
+    image48: img152,
+    image49: img153,
     descrição:
-      "Este maravilhoso apartamento de dois quartos é ideal para visitar o Porto e passar algum tempo na praia. O ambiente tranquilo e a piscina no condomínio tornam o espaço ideal para viajantes individuais, praticantes de surf, casais e famílias com crianças. As 2 varandas são maravilhosas: uma está orientada a sul e é ideal para refeições e lanches pois está equipada com mesa de madeira e cadeiras. A outra está orientada a poente onde pode descontrair a ler um livro no pôr-do-sol.",
-    registro: "35644/AL",
+    `**Modern Apartment on Rua das Flores - Heart of Porto!** 
+
+Discover the charm of Porto by staying in this elegant apartment located on the iconic Rua das Flores, one of the city's most vibrant and historic areas.
+With a modern and cozy design, this space is perfect for those who want to explore the city on foot while enjoying maximum comfort.  
+
+**What makes this space special?**  
+**Premium Location** - In the heart of Porto, just steps away from Ribeira, São Bento Station, and the city's main attractions.  
+**Modern & Comfortable Decor** - A sophisticated atmosphere with high-quality finishes, including a cozy sofa bed.  
+**Charming View** - Enjoy the vibrant energy of Rua das Flores right from your window.  
+**Fully Equipped Kitchen** - Prepare your meals with ease and convenience.  
+**Fast Wi-Fi & Workspace** - Ideal for those who need to stay connected.  
+
+**Nearby Attractions**  
+São Bento Station - 2 min walk  
+Ribeira & Douro River - 5 min walk  
+Clérigos Tower & Lello Bookstore - 7 min walk  
+Ferreira Borges Market & Palácio da Bolsa - 4 min walk  
+
+**Access & Transportation**  
+The apartment is on a pedestrian-only street, surrounded by shops, cafés, and traditional restaurants.
+If you're arriving by car, public parking options are available nearby.  
+
+**Book now and enjoy an authentic experience in the heart of Porto!**`,
   },
 
   // Aguardando fotos e descrição do barco
