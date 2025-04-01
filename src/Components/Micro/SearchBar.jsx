@@ -124,8 +124,7 @@ const SearchBar = () => {
                 />
               </div>
             )}
-          </div>
-          <div className="flex items-center ml-4">
+          <div className="flex items-center">
             <input
               type="checkbox"
               id="filterGuests"
@@ -133,11 +132,12 @@ const SearchBar = () => {
               onChange={(e) => setFilterByGuests(e.target.checked)}
               className="mr-2"
             />
-            <label htmlFor="filterGuests" className="text-sm text-gray-500 pr-5">
+            <label htmlFor="filterGuests" className="text-sm text-gray-500 pr-5 whitespace-nowrap">
               Filter by number of guests
             </label>
           </div>
         </div>
+          </div>
         <button
           className="bg-[#FF9874] p-3 rounded-full text-white hover:bg-[#E57A5a]"
           onClick={handleSearch}
