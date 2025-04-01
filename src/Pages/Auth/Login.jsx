@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { BiUser } from "react-icons/bi";
 import { AiOutlineUnlock } from "react-icons/ai";
 import { AuthContext } from "@/contexts/AuthContext";
-import ErrorModal from "@/Components/micro/Modals/Error/ErrorModal";
+import ErrorModal from "@/Components/Micro/Modals/Error/ErrorModal";
 
 const Login = () => {
   const [email, setEmail] = useState("");

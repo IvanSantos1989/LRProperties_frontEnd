@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import LoadingSpinner from "@/Components/micro/Spinners/LoadingSpinner";
+import LoadingSpinner from "@/Components/Micro/Spinners/LoadingSpinner";
 import { Link } from "react-router-dom";
 
 const Properties = () => {

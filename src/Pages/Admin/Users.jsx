@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import LoadingSpinner from "@/Components/micro/Spinners/LoadingSpinner";
+import LoadingSpinner from "@/Components/Micro/Spinners/LoadingSpinner";
 
 const Users = () => {
   const [users, setUsers] = useState();

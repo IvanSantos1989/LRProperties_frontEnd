@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useContext } from "react";
-import { Button } from "@/Components/micro/Buttons/Button";
+import { Button } from "@/Components/Micro/Buttons/Button";
 import { Link } from "react-router-dom";
 import PT from "../assets/portugal.png";
 import UK from "../assets/reino-unido.png";

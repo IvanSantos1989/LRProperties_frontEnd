@@ -11,42 +11,43 @@ import Hostel from "./Pages/Hostel/Show";
 import ForgotPassword from "./Pages/Password/ForgotPassword";
 import ResetPassword from "./Pages/Password/ResetPassword";
 import EditProfile from "./Pages/Profile/EditProfile";
+import Page from "./Components/Page";
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Home />
+        element: <Page element={<Home />} />
     },
     {
         path: "/login",
-        element: <Login />
+        element: <Page element={<Login />} />
     },
     {
         path: "/register",
-        element: <Register />
+        element: <Page element={<Register />} />
     },
     {
         path: "/logout",
-        element: <Logout />
+        element: <Page element={<Logout />}/>
     },
     {
         path: "/hostel/:hostelId",
-        element: <Hostel />
+        element: <Page element={<Hostel />} />
     },
     {
         path: "/forgot-password",
-        element: <ForgotPassword />
+        element: <Page element={<ForgotPassword />} />
     },
     {
         path: "reset-password",
-        element: <ResetPassword />
+        element: <Page element={<ResetPassword />} />
     },
     {
         path: "/profile",
         children: [
             {
                 path: "edit",
-                element: <EditProfile />
+                element: <Page element={<EditProfile />} />
             }
         ]
     },
@@ -55,19 +56,19 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <Dashboard />
+                element: <Page element={<Dashboard />} />
             },
             {
                 path: "properties",
-                element: <Properties />
+                element: <Page element={<Properties />} />
             },
             {
                 path: "users",
-                element: <Users />
+                element: <Page element={<Users />} />
             }, 
             {
                 path: "reservations",
-                element: <Reservations />
+                element: <Page element={<Reservations />} />
             }
         ]
 

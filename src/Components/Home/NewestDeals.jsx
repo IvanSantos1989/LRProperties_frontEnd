@@ -1,6 +1,6 @@
 import React from 'react'
 import AboutUs from './AboutUs';
-import HostelList from '../micro/HostelList';
+import HostelList from '../Micro/HostelList';
 
 const NewestDeals = () => {
 
