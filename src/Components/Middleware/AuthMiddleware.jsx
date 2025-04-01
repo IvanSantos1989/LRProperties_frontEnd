@@ -1,7 +1,6 @@
-import {Navigate, useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import {useContext, useEffect} from "react";
 import {AuthContext} from "../../contexts/AuthContext";
-import axios from "axios";
 import { jwtDecode } from "jwt-decode";
 
 export const AuthMiddleware = ({children}) =>  {
