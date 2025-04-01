@@ -138,18 +138,22 @@ const Header = () => {
             {profileDropdownOpen && (
               <div className="absolute right-0 mt-2 w-48 bg-white border rounded-md shadow-lg z-50">
                 <ul>
-                  <li
-                    className="flex gap-2 px-4 py-2 hover:bg-gray-200 cursor-pointer"
-                    onClick={() => setProfileDropdownOpen(false)}
-                  >
-                    <Link to="/profile/edit">Manage Profile</Link>
-                  </li>
-                  <li
-                    className="flex gap-2 px-4 py-2 hover:bg-gray-200 cursor-pointer"
-                    onClick={() => setProfileDropdownOpen(false)}
-                  >
-                    <Link to="/">Logout</Link>
-                  </li>
+                  <Link to="/profile/edit">
+                    <li
+                      className="flex gap-2 px-4 py-2 hover:bg-gray-200 cursor-pointer"
+                      onClick={() => setProfileDropdownOpen(false)}
+                    >
+                      Manage Profile
+                    </li>
+                  </Link>
+                  <Link to="/logout">
+                    <li
+                      className="flex gap-2 px-4 py-2 hover:bg-gray-200 cursor-pointer"
+                      onClick={() => setProfileDropdownOpen(false)}
+                    >
+                      Logout
+                    </li>
+                  </Link>
                 </ul>
               </div>
             )}
