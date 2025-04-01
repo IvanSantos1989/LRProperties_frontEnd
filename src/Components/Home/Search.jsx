@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-import React from "react";
-import searchImg from "../../assets/Porto.jpg";
-import SearchBar from "../Micro/SearchBar";
-=======
 import React from 'react'
 import searchImg from "../../assets/Porto.jpg"
-import SearchBar from '../micro/SearchBar'
->>>>>>> origin/main
+import SearchBar from '../Micro/SearchBar'
 
 const Search = () => {
     return (
@@ -19,5 +13,4 @@ const Search = () => {
         </div>
     )
 }
-
 export default Search
