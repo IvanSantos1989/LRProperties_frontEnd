@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import LoadingSpinner from "@/Components/micro/Spinners/LoadingSpinner";
+import LoadingSpinner from "@/Components/Micro/Spinners/LoadingSpinner";
 
 const Reservations = () => {
   const [reservations, setReservations] = useState();

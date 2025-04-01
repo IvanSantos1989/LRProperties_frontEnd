@@ -1,6 +1,12 @@
+<<<<<<< HEAD
+import React from "react";
+import searchImg from "../../assets/Porto.jpg";
+import SearchBar from "../Micro/SearchBar";
+=======
 import React from 'react'
 import searchImg from "../../assets/Porto.jpg"
 import SearchBar from '../micro/SearchBar'
+>>>>>>> origin/main
 
 const Search = () => {
     return (

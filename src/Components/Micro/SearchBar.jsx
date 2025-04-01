@@ -3,7 +3,7 @@ import { FiSearch } from "react-icons/fi";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import GuestSelector from "./GuestSelector";
-import ErrorModal from "./Modals/ErrorModal";
+import ErrorModal from "./Modals/Error/ErrorModal";
 
 const SearchBar = () => {
   const [checkInDate, setCheckInDate] = useState(null);
