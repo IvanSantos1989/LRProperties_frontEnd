@@ -5,7 +5,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import GuestSelector from "./GuestSelector";
 import ErrorModal from "./Modals/Error/ErrorModal";
 
-const SearchBar = () => {
+const SearchBar = ({setFilters}) => {
   const [checkInDate, setCheckInDate] = useState(null);
   const [checkOutDate, setCheckOutDate] = useState(null);
   const [showGuestSelector, setShowGuestSelector] = useState(false);
@@ -54,14 +54,7 @@ const SearchBar = () => {
       return;
     }
 
-    // Confirmação que atende os requisitos de pesquisa
-    console.log("Search initiated with:", {
-      checkInDate,
-      checkOutDate,
-      adults,
-      pets,
-      filterByGuests,
-    });
+    setFilters({checkInDate, checkOutDate, adults, pets, filterByGuests})
   };
 
   return (
