@@ -137,7 +137,7 @@ export function HomePageForms() {
               onClick={() => setStep(1)}
               className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300 mr-2"
             >
-              Voltar
+              Back
             </button>
             <h3 className="text-xl font-bold">Talk to us</h3>
           </div>
@@ -302,7 +302,6 @@ export function HomePageForms() {
         </div>
       )}
 
-      {/* Step 3: Success */}
       {step === 3 && (
         <div className="text-center py-8 space-y-4">
           <div className="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full mx-auto flex items-center justify-center">
@@ -316,17 +315,17 @@ export function HomePageForms() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
           </div>
-          <h3 className="text-xl font-bold">Enviado com Sucesso!</h3>
+          <h3 className="text-xl font-bold">Done!</h3>
           <p className="text-gray-600 dark:text-gray-400">
             {formType === "contact"
-              ? "Obrigado pelo seu contacto. Responderemos o mais rápido possível."
-              : "Obrigado pela sua avaliação. A sua opinião é muito importante para nós."}
+              ? "Thank you for contacting us. We will answer as fast as possible."
+              : "Thank you for your share. Your opinion matters the most to us."}
           </p>
           <button
             onClick={resetForm}
             className="mt-4 px-6 py-2 bg-orange-400 hover:bg-orange-500 text-white font-medium rounded-md transition-colors"
           >
-            Voltar ao Início
+            Back
           </button>
         </div>
       )}
