@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { FaWifi } from "react-icons/fa";
 import { IoMdTv, IoMdKey } from "react-icons/io";
 import { TbToolsKitchen2 } from "react-icons/tb";
@@ -12,6 +12,7 @@ import LoadingSpinner from '@/Components/Micro/Spinners/LoadingSpinner';
 
 const Hostel = () => {
     const { hostelId } = useParams();
+    const navigate = useNavigate();
     const [hostel, setHostel] = useState(); 
 
     const [startDate, setStartDate] = useState(null);
@@ -54,6 +55,24 @@ const Hostel = () => {
 
     const handleCloseCarousel = () => {
         setShowCarousel(false);
+    };
+
+    const handleBooking = () => {
+        if (!startDate || !endDate) {
+            setErrorMessage("Please select both check-in and check-out dates.");
+            return;
+        }
+
+        const bookingDetails = {
+            hostel,
+            totalPrice,
+            startDate,
+            endDate,
+            pets,
+            adults,
+        };
+
+        navigate("/confirmation", { state: bookingDetails });
     };
 
     const renderArrowPrev = (onClickHandler, hasPrev, label) =>
@@ -173,7 +192,10 @@ const Hostel = () => {
 
                     <p className="font-bold text-2xl mb-4">Total: {totalPrice}€</p>
 
-                    <button className="w-full bg-[#FFA282] hover:bg-[#E57A5a] text-white p-3 rounded-xl font-bold">
+                    <button
+                        onClick={handleBooking}
+                        className="w-full bg-[#FFA282] hover:bg-[#E57A5a] text-white p-3 rounded-xl font-bold"
+                    >
                         Book Now
                     </button>
                 </div>
