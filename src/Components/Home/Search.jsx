@@ -6,7 +6,7 @@ const Search = ({setFilters}) => {
     return (
         <div className='h-[500px] relative mb-9'>
             <img src={searchImg} alt=""
-                className='w-full h-full object-cover rounded-xl' />
+                className='w-full h-full object-cover' />
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2">
                 <SearchBar setFilters={setFilters}/>
             </div>

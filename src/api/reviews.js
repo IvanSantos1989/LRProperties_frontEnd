@@ -1,4 +1,4 @@
-const { default: axios } = require("axios")
+import axios from "axios"
 const api = "http://127.0.0.1:8000/api"
 
 
@@ -20,4 +20,4 @@ const fetchReviewTypes = async () => {
     }
 }
 
-export {fetchReviews}
+export {fetchReviews,fetchReviewTypes}
