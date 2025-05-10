@@ -9,9 +9,9 @@ const NewestDeals = ({filters}) => {
                 Available Accommodation List
             </h1>
             <HostelList filters={filters}/>
-            <AboutUs />
+           
         </div>
     );
 };
-
+ /**  <AboutUs /> */
 export default NewestDeals;
